@@ -13,3 +13,7 @@ def Home(request):
     return render(request,'template.html')
 def Members(request):
     return render(request,'member.html',{'mymembers':mymembers})
+def Detail(request,id):
+    from members.models import Members
+    person =  Members.objects.get(pk=id)
+    return render(request,'detail.html',{'person': person})

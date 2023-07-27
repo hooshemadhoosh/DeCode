@@ -23,4 +23,5 @@ urlpatterns = [
     path('hi/', views.HelloWorldPage ),
     path('', views.Home ),
     path('members/', views.Members ),
+    path('members/detail/<int:id>', views.Detail ),
 ]
