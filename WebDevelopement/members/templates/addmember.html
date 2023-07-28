@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+    <form action="/members/add" method="post">
+        {% csrf_token %}
+        <input type="text" name="firstname" placeholder="Firstname">
+        <input type="text" name="lastname" placeholder="Lastname">
+        <input type="tel" name="tel" placeholder="09xxxxxxxxx">
+        <input type="text" name="about" placeholder="About member...">
+        <input type="submit" name="submit" value="Add">
+    </form>
+</body>

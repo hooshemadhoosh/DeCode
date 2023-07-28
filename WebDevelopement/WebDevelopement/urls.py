@@ -24,4 +24,6 @@ urlpatterns = [
     path('', views.Home ),
     path('members/', views.Members ),
     path('members/detail/<int:id>', views.Detail ),
+    path('members/delete/<int:id>', views.Delete ),
+    path('members/add', views.AddMember ),
 ]
