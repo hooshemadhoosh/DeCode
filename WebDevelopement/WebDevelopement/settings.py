@@ -138,4 +138,5 @@ EMAIL_HOST_PASSWORD="jbymptmgldkncfjq"
 EMAIL_USE_TLS=True
 EMAIL_USE_SSL = False
 EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+#password = 111decode8413
 #---------------------------------
