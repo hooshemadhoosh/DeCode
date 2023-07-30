@@ -120,7 +120,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR / 'WebDevelopement//STATICS'
 STATICFILES_DIRS = [
-    BASE_DIR / 'GlobalStatic'
+    BASE_DIR / 'GlobalStatics'
 ]
 
 # Default primary key field type
