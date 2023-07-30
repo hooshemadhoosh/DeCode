@@ -10,7 +10,7 @@ def HelloWorldPage(request):
     return HttpResponse("Bonjour World!")
 def Home(request):
     #send_mail("Hello World","this is a test","decodenotifier@gamil.com",["decodenotifier@gamil.com"],fail_silently=False)
-    return render(request,'template.html')
+    return render(request,'login.html')
 def Members(request):
     from members.models import Members
     mymembers = Members.objects.all().values()
