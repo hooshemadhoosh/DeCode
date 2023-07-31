@@ -3,8 +3,8 @@
 /* @import url(/css/fonts.css);
 @import url(/css/variables.css);
 @import url(/css/animations.css); */
-/* @import url('fonts.css'); */
-/* @import 'animations.css'; */
+@import "fonts.css";
+@import "variables.css";
 
 body {
     font-family: 'Super Mario';
@@ -35,7 +35,7 @@ body {
 }
 
 .super-mario-image {
-    background-image: url(/images/genreal/SuperMario--Stop.png);
+    background-image: url("../images/genreal/SuperMario--Stop.png");
     background-repeat: no-repeat;
     background-size: contain;
     width: 40px;
