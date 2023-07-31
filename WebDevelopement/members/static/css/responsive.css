@@ -263,6 +263,19 @@
     .templates__slider-sliding {
         font-size: 1.4rem;
     }
+
+    /* Whoarewe */
+    .whoarewe__bottom-right-images img:nth-child(4) {
+        display: block;
+    }
+
+    .whoarewe__cloud3-image {
+        display: block;
+    }
+    
+    .whoarewe__grasses2-image {
+        left: -125%;
+    }
 }
 
 @media only screen and (min-width: 920px) {
@@ -276,6 +289,12 @@
     /* Templates Only */
     .templates__bottom-right-images img:nth-child(4), 
     .templates__bottom-right-images img:nth-child(5) {
+        display: block;
+    }
+
+    /* Whoarewe */
+    .whoarewe__bottom-right-images img:nth-child(5),
+    .whoarewe__bottom-right-images img:nth-child(6) {
         display: block;
     }
 }
@@ -417,6 +436,12 @@
         width: 30px;
         height: 48px;
     }
+
+    /* Whoarewe */
+    .whoarewe__cloud3-image {
+        width: 184px;
+        height: 80px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -462,6 +487,13 @@
         top: -120px;
     }
 
+    .templates__grass-hill2-image,
+    .whoarewe__grass-hill2-image {
+        width: 207px;
+        height: 90px;
+        top: -90px;
+    }
+
     .templates__texts {
         gap: 5rem;
     }
@@ -472,6 +504,16 @@
 
     .slider-scrollbar {
         display: block;
+    }
+
+    /* Whoarewe */
+    .whoarewe__bottom-right-images img:nth-child(7),
+    .whoarewe__bottom-right-images img:nth-child(8) {
+        display: block;
+    }
+
+    .whoarewe__grasses2-image {
+        left: -80%;
     }
 }
 
@@ -521,6 +563,11 @@
         width: 130px;
         height: 260px;
         top: -130px;
+    }
+
+    /* Whoarewe */
+    .whoarewe__bottom-right-images img:nth-child(9) {
+        display: block;
     }
 }
 
