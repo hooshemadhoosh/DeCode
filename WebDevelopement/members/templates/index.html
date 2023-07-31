@@ -1,13 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeCode | Template 1</title>
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/vendor/swiper.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="{%static '/css/reset.css' %}">
+    <link rel="stylesheet" href="{%static '/vendor/swiper.css' %}">
+    <link rel="stylesheet" href="{%static  '/css/style.css' %}">
+    <link rel="stylesheet" href="{%static '/css/responsive.css' %}">
 </head>
 <body>
 
@@ -24,13 +25,13 @@
         </div>
         <div class="menu-mobile">
             <button class="menu-mobile__btn--show">
-                <img src="/images/header & menu/menu-icon.png" class="menu-mobile__btn-image--show" alt="menu icon">
+                <img src="{%static '/images/header & menu/menu-icon.png'%}" class="menu-mobile__btn-image--show" alt="menu icon">
             </button>
             <a href="#" class="menu-mobile__link menu-link--hover">OTHER TEMPLATES</a>
         </div>
         <div class="menu-mobile__side">
             <button class="menu-mobile__btn--close">
-                <img src="/images/header & menu/close-icon.png" class="menu-mobile__btn-image--close" alt="menu icon">
+                <img src="{%static '/images/header & menu/close-icon.png' %}" class="menu-mobile__btn-image--close" alt="menu icon">
             </button> 
             <div class="menu-mobile__list"> 
                 <a href="#" class="menu-mobile__list-item menu-link--hover">who are we?</a>
@@ -43,44 +44,44 @@
     <header class="header">
         <div class="header__content">
             <div class="container">
-                <img src="/images/logo/decode logo.png" class="header__logo" alt="Logo">
+                <img src="{%static '/images/logo/decode logo.png' %}" class="header__logo" alt="Logo">
                 <h2 class="header__description">
                     Hi! we are a team who design and develop websites that can improve your bussiness!
                 </h2>
             </div>
         </div>
         <div class="header__images">
-            <img src="/images/genreal/Cloud-1.png" class="header__cloud1-image" alt="cloud 1">
-            <img src="/images/genreal/Cloud-2.png" class="header__cloud2-image" alt="cloud 2">
-            <img src="/images/header & menu/middleBoxes.png" class="header__middle-boxes-image" alt="middle boxes">
+            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="header__cloud1-image" alt="cloud 1">
+            <img src="{%static '/images/genreal/Cloud-2.png'%}" class="header__cloud2-image" alt="cloud 2">
+            <img src="{%static '/images/header & menu/middleBoxes.png'%}" class="header__middle-boxes-image" alt="middle boxes">
             <div class="header__bottom-images">
                 <div class="header__bottom-left-images">
                     <div class="super-mario-image"></div>
-                    <img src="/images/header & menu/grass-hill-1.png" class="header__grass-hill1-image" alt="grasses">
-                    <img src="/images/genreal/grasses-1.png" class="header__grasses1-image" alt="grasses">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/header & menu/grass-hill-1.png'%}" class="header__grass-hill1-image" alt="grasses">
+                    <img src="{%static '/images/genreal/grasses-1.png'%}" class="header__grasses1-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
                 </div>
                 <div class="header__bottom-right-images">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
                 </div>
             </div>
         </div>
@@ -111,25 +112,25 @@
                             <a href="#" class="templates__slider-text">Template 3</a>
                         </div>
                     </div>               
-                    <img src="/images/genreal/prev-btn.png" class="slider-btn swiper-button-prev" alt="prev button">
-                    <img src="/images/genreal/next-btn.png" class="slider-btn swiper-button-next" alt="next button">
+                    <img src="{%static '/images/genreal/prev-btn.png' %}" class="slider-btn swiper-button-prev" alt="prev button">
+                    <img src="{%static '/images/genreal/next-btn.png' %}" class="slider-btn swiper-button-next" alt="next button">
                     <div class="slider-scrollbar swiper-scrollbar"></div>
                 </div>
             </div>
         </div>
         <div class="templates__images">
-            <img src="/images/genreal/Cloud-1.png" class="templates__cloud1-image" alt="cloud 1">
+            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="templates__cloud1-image" alt="cloud 1">
             <div class="templates__bottom-images">
                 <div class="templates__bottom-left-images">
-                    <img src="/images/genreal/grasses-2.png" class="templates__grasses2-image" alt="grasses">
-                    <img src="/images/genreal/chimney.png" class="templates__chimney-image" alt="grasses">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/grasses-2.png'%}" class="templates__grasses2-image" alt="grasses">
+                    <img src="{%static '/images/genreal/chimney.png'%}" class="templates__chimney-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
                 </div>
                 <div class="templates__bottom-right-images">
                     <img src="/images/genreal/grass-hill-2.png" class="templates__grass-hill2-image" alt="grasses">
@@ -219,32 +220,32 @@
             <img src="/images/genreal/Cloud-3.png" class="whoarewe__cloud3-image" alt="cloud 3">
             <div class="whoarewe__bottom-images">
                 <div class="whoarewe__bottom-left-images">
-                    <img src="/images/genreal/grasses-2.png" class="whoarewe__grasses2-image" alt="grasses">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/grasses-2.png' %}" class="whoarewe__grasses2-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
                 </div>
                 <div class="whoarewe__bottom-right-images">
-                    <img src="/images/genreal/grass-hill-2.png" class="whoarewe__grass-hill2-image" alt="grasses">
-                    <img src="/images/genreal/chimney.png" class="whoarewe__chimney-image" alt="grasses">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
-                    <img src="/images/genreal/blocks.png" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/grass-hill-2.png'%}" class="whoarewe__grass-hill2-image" alt="grasses">
+                    <img src="{%static '/images/genreal/chimney.png'%} " class="whoarewe__chimney-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
                 </div>
             </div>
         </div>
