@@ -141,8 +141,6 @@
         height: 32px;
     }
 
-    /* Whoarewe */
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -175,6 +173,11 @@
         width: 70px;
         height: 140px;
         top: -70px;
+    }
+
+    /* Whoarewe */
+    .whoarewe__bottom-right-images img:nth-child(3) {
+        display: block;
     }
 }
 

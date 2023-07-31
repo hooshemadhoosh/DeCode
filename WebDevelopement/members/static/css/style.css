@@ -458,12 +458,16 @@ body {
 }
 
 .whoarewe__cloud3-image {
-    width: 78px;
-    height: 30px;
+    width: 138px;
+    height: 60px;
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 10%;
     display: none;
+}
+
+.whoarewe__grasses2-image {
+    left: -150%;
 }
 
 .whoarewe__chimney-image {
