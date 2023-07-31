@@ -1,3 +1,6 @@
+body {
+    background-color: red;
+}
 @font-face {
     font-family: 'Super Mario';
     src: url('/WebDevelopement/members/static/fonts/SuperMarioRegular.ttf');
