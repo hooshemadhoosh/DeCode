@@ -1,9 +1,10 @@
 /* ------ Start Main styles ------ */
-{% load static %}
 
-@import url({%static '/css/fonts.css' %});
+/* @import url(/css/fonts.css);
 @import url(/css/variables.css);
-@import url(/css/animations.css);
+@import url(/css/animations.css); */
+/* @import url('fonts.css'); */
+/* @import 'animations.css'; */
 
 body {
     font-family: 'Super Mario';
