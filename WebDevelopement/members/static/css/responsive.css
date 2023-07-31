@@ -1,0 +1,623 @@
+/* Container */
+
+@media only screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        margin: 0 1.8rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+        margin: 0 4.4rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 932px;
+        margin: 0 3rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 3rem;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1360px;
+        margin: 0 4rem;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+
+    /* Main */
+    .super-mario-image {
+        width: 60px;
+        height: 64.8px;
+        top: -64.8px;
+    }
+
+    .blocks-image {
+        width: 30px;
+        height: 60px;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    } 
+
+    /* Menu */
+    .menu-mobile {
+        padding: 1rem 4rem;
+    }
+
+    /* Header & Templates */
+    .header__cloud1-image, 
+    .templates__cloud1-image {
+        width: 78px;
+        height: 60px;
+    }
+
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 60px);
+    }
+
+    /* Header Only */
+    .header__cloud2-image,
+    .whoarewe__cloud2-image {
+        width: 120px;
+        height: 60px;
+    }
+    
+    .header__middle-boxes-image {
+        width: 180px;
+        height: 60px;
+        top: 60%;
+    }
+    
+    .header__grass-hill1-image {
+        width: 125px;
+        height: 50px;
+        top: -50px;
+    }
+    
+    .header__grasses1-image {
+        width: 100px;
+        height: 50px;
+        top: -50px;
+    }
+
+    .header__logo {
+        width: 275px;
+        height: 55px;
+    }
+    
+    .header__description {
+        width: 270px;
+        font-size: 1.4rem;
+    }
+
+    /* Templates Only */   
+    .templates__grasses2-image,
+    .whoarewe__grasses2-image {
+        display: block;
+    }
+    
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 60px;
+        height: 120px;
+        top: -60px;
+    }
+    
+    .templates__grass-hill2-image,
+    .whoarewe__grass-hill2-image {
+        width: 115px;
+        height: 50px;
+        top: -50px;
+    }
+    
+    .templates__description {
+        width: 350px;
+        font-size: 1.4rem;
+    }
+    
+    .templates__slider {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .templates__slider-sliding {
+        font-size: 1.2rem;
+    }
+    
+    .slider-btn{
+        width: 20px;
+        height: 32px;
+    }
+
+    /* Whoarewe */
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* Main */
+    .blocks-image {
+        width: 35px;
+        height: 70px;
+    }
+
+    /* Header & Templates */
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 70px);
+    }
+
+    /* Header Only */
+    .header__bottom-left-images img:nth-child(8) {
+        display: block;
+    }
+
+    /* Templates Only */
+    .templates__bottom-right-images img:nth-child(6) {
+        display: block;
+    }
+
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 70px;
+        height: 140px;
+        top: -70px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    /* Main */
+    .black-overlay {
+        display: none;
+    }
+
+    .super-mario-image {
+        width: 70px;
+        height: 75.6px;
+        top: -75.6px;
+    }
+        
+    .blocks-image {
+        width: 40px;
+        height: 80px;
+    }
+
+    .section__title {
+        font-size: 2.5rem;
+    }
+
+    /* Menu */
+    .menu-mobile,
+    .menu-mobile__side {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: flex;
+    }
+
+    /* Header & Templates */
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 80px);
+    }
+
+    /* Header Only */
+    .header__bottom-right-images img:nth-child(2) {
+        display: block;
+    }
+
+    .header__content {
+        padding-left: 0;
+    }
+    
+    .header__logo {
+        width: 300px;
+        height: 60px;
+    }
+    
+    .header__description {
+        width: 300px;
+        font-size: 1.6rem;
+    }
+
+    /* Templates Only */
+    .templates__bottom-left-images img:nth-child(3) {
+        display: block;
+    }
+
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 80px;
+        height: 160px;
+        top: -80px;
+    }
+
+    .templates__texts {
+        padding-top: 4rem;
+    }
+    
+    .templates__description {
+        width: 400px;
+        font-size: 1.6rem;
+    }
+    .templates__slider-sliding {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+
+    /* Header Only */
+    .header__bottom-left-images img:nth-child(6), 
+    .header__bottom-left-images img:nth-child(7) {
+        display: block;
+    }
+
+    /* Templates Only */
+    .templates__bottom-right-images img:nth-child(4), 
+    .templates__bottom-right-images img:nth-child(5) {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* Main */
+    .super-mario-image {
+        width: 90px;
+        height: 97.2px;
+        top: -97.2px;
+        left: 30%;
+    }
+    .super-mario-image-reverse {
+        left: auto;
+        right: 30%;
+    }
+        
+    .blocks-image {
+        width: 50px;
+        height: 100px;
+    }
+
+    .section__title {
+        font-size: 3rem;
+    }
+
+    /* Menu */
+    .menu-desktop {
+        padding: 2rem 6rem;
+    }
+    
+    .menu__right {
+        display: flex;
+        gap: 8rem;
+    }
+
+    /* Header & Templates */
+    .header__cloud1-image, 
+    .templates__cloud1-image {
+        width: 104px;
+        height: 80px;
+    }
+
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 100px);
+    }
+
+    /* Header Only */
+    .header__cloud2-image,
+    .whoarewe__cloud2-image {
+        width: 160px;
+        height: 80px;
+    }
+    
+    .header__middle-boxes-image {
+        width: 240px;
+        height: 80px;
+        top: 50%;
+    }
+    
+    .header__grass-hill1-image {
+        width: 225px;
+        height: 75px;
+        top: -75px;
+    }
+    
+    .header__grasses1-image {
+        width: 140px;
+        height: 70px;
+        top: -70px;
+    }
+
+    .header__logo {
+        width: 350px;
+        height: 70px;
+    }
+    
+    .header__description {
+        width: 400px;
+        font-size: 1.8rem;
+    }
+
+    /* Templates Only */
+    .templates__cloud1-image {
+        display: block;
+        top: 35%;
+    }
+
+    .templates__grasses2-image,
+    .whoarewe__grasses2-image {
+        width: 210px;
+        height: 70px;
+        top: -70px;
+    }
+    
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 100px;
+        height: 200px;
+        top: -100px;
+    }
+    
+    .templates__grass-hill2-image,
+    .whoarewe__grass-hill2-image {
+        width: 161px;
+        height: 70px;
+        top: -70px;
+    }
+
+    .templates__texts {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    
+    .templates__title {
+        align-items: start;
+    }
+    
+    .templates__description {
+        width: 450px;
+        font-size: 1.8rem;
+        text-align: end;
+    }
+    
+    .templates__slider {
+        width: 525px;
+        height: 350px;
+    }
+    
+    .templates__slider-sliding {
+        font-size: 1.8rem;
+    }
+    
+    .slider-btn{
+        width: 30px;
+        height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+
+    /* Main */
+    .super-mario-image {
+        left: 50%;
+    }
+
+    .blocks-image {
+        width: 60px;
+        height: 120px;
+    }
+
+    /* Header & Templates */
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 120px);
+    }
+
+    /* Header Only */ 
+    .header__bottom-right-images img:nth-child(1),
+    .header__bottom-left-images img:nth-child(5) {
+        display: block;
+    }
+
+    .header__logo {
+        width: 400px;
+        height: 80px;
+    }
+
+    /* Templates Only */
+    .templates__bottom-right-images img:nth-child(2),
+    .templates__bottom-right-images img:nth-child(3) {
+        display: block;
+    }
+
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 120px;
+        height: 240px;
+        top: -120px;
+    }
+
+    .templates__texts {
+        gap: 5rem;
+    }
+
+    .templates__description {
+        width: 500px;
+    }
+
+    .slider-scrollbar {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /* Main */
+    .super-mario-image {
+        width: 94px;
+        height: 100px;
+        top: -100px;
+    }
+    
+    .blocks-image {
+        width: 65px;
+        height: 130px;
+    }
+
+    /* Header & Templates */
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 130px);
+    }
+    
+    /* Header Only */ 
+    .header__bottom-left-images img:nth-child(4) {
+        display: block;
+    }
+    
+    .header__logo {
+        width: 450px;
+        height: 90px;
+    }
+    
+    .header__description {
+        width: 450px;
+        font-size: 2rem;
+    }
+
+    /* Templates Only */
+    .templates__bottom-left-images img:nth-child(4) {
+        display: block;
+    }
+
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 130px;
+        height: 260px;
+        top: -130px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+
+    /* Main */
+    .super-mario-image {
+        width: 100px;
+        height: 106px;
+        top: -106px;
+    }
+    
+    .blocks-image {
+        width: 75px;
+        height: 150px;
+    }
+
+    .section__title {
+        font-size: 4rem;
+    }
+
+    /* Header & Templates */
+    .header__cloud1-image, 
+    .templates__cloud1-image {
+        width: 117px;
+        height: 90px;
+    }
+
+    .header__content,
+    .templates__content,
+    .whoarewe__content {
+        height: calc(100% - 150px);
+    }
+    
+    /* Header Only */   
+    .header__cloud2-image,
+    .whoarewe__cloud2-image {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .header__middle-boxes-image {
+        width: 270px;
+        height: 90px;
+        top: 50%;
+    }
+    
+    .header__grass-hill1-image {
+        width: 255px;
+        height: 85px;
+        top: -85px;
+    }
+    
+    .header__grasses1-image {
+        width: 170px;
+        height: 85px;
+        top: -85px;
+    }
+
+    /* Templates Only */
+    .templates__grasses2-image,
+    .whoarewe__grasses2-image {
+        width: 255px;
+        height: 85px;
+        top: -85px;
+    }
+    
+    .templates__chimney-image,
+    .whoarewe__chimney-image {
+        width: 150px;
+        height: 300px;
+        top: -150px;
+    }
+    
+    .templates__grass-hill2-image,
+    .whoarewe__grass-hill2-image {
+        width: 195.5px;
+        height: 85px;
+        top: -85px;
+    }
+
+    .templates__texts {
+        gap: 7rem;
+    }
+    
+    .templates__description {
+        font-size: 2rem;
+    }
+    
+    .templates__slider {
+        width: 570px;
+        height: 380px;
+    }
+    
+    .templates__slider-sliding {
+        font-size: 2rem;
+    }
+    
+    .slider-btn{
+        width: 40px;
+        height: 64px;
+    }
+}
