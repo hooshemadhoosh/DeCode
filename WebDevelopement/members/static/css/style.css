@@ -1,6 +1,7 @@
 /* ------ Start Main styles ------ */
+{% load static %}
 
-@import url(/css/fonts.css);
+@import url({%static '/css/fonts.css' %});
 @import url(/css/variables.css);
 @import url(/css/animations.css);
 
