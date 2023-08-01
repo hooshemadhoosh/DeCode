@@ -6,6 +6,11 @@
 @import "fonts.css";
 @import "variables.css";
 
+/* @font-face {
+    font-family: 'Super Mario';
+    src: url("../fonts/SuperMarioRegular.ttf") format("truetype");
+} */
+
 body {
     font-family: 'Super Mario';
     color: var(--white-color);
@@ -57,7 +62,7 @@ body {
 }
 
 .section__title {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
 }
 
 /* ------ Finish Main styles ------ */
@@ -76,6 +81,7 @@ body {
     justify-content: space-between;
     align-items: center;
     border: solid 2px var(--white-color);
+    background-color: var(--blue-color);
     padding: 1rem 2rem;
 } 
 
@@ -84,8 +90,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     border: none;
 }
@@ -171,7 +177,8 @@ body {
 
 .header,
 .templates,
-.whoarewe {
+.whoarewe,
+.order {
     height: 100vh;
     width: 100%;
     overflow-x: clip;
@@ -180,7 +187,8 @@ body {
 
 .header__images,
 .templates__images,
-.whoarewe__images {
+.whoarewe__images,
+.order__images {
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -188,7 +196,8 @@ body {
 }
 
 .header__cloud1-image, 
-.templates__cloud1-image {
+.templates__cloud1-image,
+.order__cloud1-image {
     width: 52px;
     height: 40px;
     position: absolute;
@@ -198,7 +207,8 @@ body {
 
 .header__bottom-images,
 .templates__bottom-images,
-.whoarewe__bottom-images {
+.whoarewe__bottom-images,
+.order__bottom-images {
     display: flex;
     justify-content: space-between;
 }
@@ -208,14 +218,17 @@ body {
 .templates__bottom-left-images,
 .templates__bottom-right-images,
 .whoarewe__bottom-left-images,
-.whoarewe__bottom-right-images {
+.whoarewe__bottom-right-images,
+.order__bottom-left-images,
+.order__bottom-right-images {
     display: flex;
     position: relative;
 }
 
 .header__content,
 .templates__content,
-.whoarewe__content {
+.whoarewe__content,
+.order__content {
     width: 100%;
     height: calc(100% - 40px);
 }
@@ -250,7 +263,8 @@ body {
     left: 0;
 }
 
-.header__grasses1-image {
+.header__grasses1-image,
+.order__grasses1-image {
     width: 60px;
     height: 30px;
     position: absolute;
@@ -291,7 +305,9 @@ body {
 
 /* ------ Start Templates ------ */
 
-.templates__content {
+.templates__content,
+.order__content,
+.whoarewe__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -394,12 +410,6 @@ body {
 
 /* ------ Start Whoarewe ------ */
 
-.whoarewe__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .whoarewe__texts {
     display: flex;
     flex-direction: column;
@@ -432,7 +442,6 @@ body {
 
 .whoarewe__slider-description {
     font-size: 1.1rem;
-    text-align: center;
 }
 
 .whoarewe__slider-person {
@@ -444,8 +453,12 @@ body {
 }
 
 .whoarewe__slider-person-image {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.whoarewe__slider-scrollbar {
+    display: none;
 }
 
 .whoarewe__bottom-right-images img:nth-child(3),
@@ -477,3 +490,136 @@ body {
 }
 
 /* ------ Finish Whoarewe ------ */
+
+
+/* ------ Start Order ------ */
+
+.order__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+    gap: 2rem;
+}
+
+.order__section__title {
+    text-align: center;
+}
+
+.order__title-green {
+    color: var(--green-color);
+}
+
+.order__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.order__texts-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order__texts-right-specifictions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.order__texts-right-name {
+
+}
+
+.order__texts-right-name-title,
+.order__texts-right-file-title {
+    font-size: 1.2rem;
+}
+
+.order__texts-right-name-input {
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding: .5rem;
+    font-family: 'Super Mario';
+    font-size: 1rem;
+}
+.order__texts-right-name-input::placeholder {
+    color: inherit;
+    font-family: inherit;
+    font-size: .9rem;
+}
+
+.order__texts-right-file {
+
+}
+
+.order__texts-right-file-input {
+    background-color: transparent;
+}
+
+.order__texts-right-subjects {
+    position: relative;
+}
+
+.order__texts-dropdown-btn {
+    width: 240px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+}
+
+.order__texts-dropdown-btn-img {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.order__texts-dropdown {
+    display: none;
+}
+
+.order__texts-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.order__bottom-left-images img:nth-child(3),
+.order__bottom-left-images img:nth-child(4), 
+.order__bottom-left-images img:nth-child(5), 
+.order__bottom-left-images img:nth-child(6), 
+.order__bottom-left-images img:nth-child(7),
+.order__bottom-left-images img:nth-child(8),
+.order__bottom-left-images img:nth-child(9) {
+    display: none;
+}
+
+.order__cloud1-image {
+    left: 80%;
+}
+
+.order__grasses1-image {
+    left: 10%;
+}
+
+.order__flag-image {
+    width: 30px;
+    height: 210px;
+    position: absolute;
+    right: 0;
+    top: -190px;
+}
+
+/* ------ Finish Order ------ */

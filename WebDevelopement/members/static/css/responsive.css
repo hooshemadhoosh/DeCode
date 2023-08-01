@@ -46,7 +46,7 @@
     }
 
     .section__title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     } 
 
     /* Menu */
@@ -141,6 +141,32 @@
         height: 32px;
     }
 
+    /* Whoarewe */
+    .whoarewe__slider {
+        width: 420px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 365px;
+        padding: 2rem;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 1.7rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.3rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.1rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -265,6 +291,31 @@
     }
 
     /* Whoarewe */
+    .whoarewe__slider {
+        width: 460px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 390px;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 2rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.6rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.2rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 50px;
+        height: 50px;
+    }
+
     .whoarewe__bottom-right-images img:nth-child(4) {
         display: block;
     }
@@ -507,6 +558,27 @@
     }
 
     /* Whoarewe */
+    .whoarewe__slider {
+        width: 480px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 420px;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 2.3rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.4rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 55px;
+        height: 55px;
+    }
+
     .whoarewe__bottom-right-images img:nth-child(7),
     .whoarewe__bottom-right-images img:nth-child(8) {
         display: block;
