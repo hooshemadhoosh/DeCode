@@ -606,14 +606,14 @@ body {
     display: none;
     align-items: center;
     flex-wrap: wrap;
-    gap: .6rem;
+    gap: .8rem;
     position: absolute;
     font-size: .8rem;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--blue-color);
     border: 2px solid var(--white-color);
-    padding: .6rem;
+    padding: .8rem;
     margin-top: .5rem;
     z-index: 10;
     overflow-y: scroll;
@@ -653,6 +653,7 @@ body {
     font-family: 'Super Mario';
     font-size: .8rem;
     padding: .5rem;
+    opacity: .5;
 }
 
 .order__texts-left-btn {
@@ -695,7 +696,7 @@ body {
     position: absolute;
     right: 0;
     top: -190px;
-    z-index: 20;
+    z-index: 18;
 }
 
 /* ------ Finish Order ------ */
