@@ -268,7 +268,10 @@
                                 </div>
                                 <div class="order__texts-right-file">
                                     <p class="order__texts-right-file-title">Attach a file</p>
-                                    <input type="file" class="order__texts-right-file-input"> 
+                                    <label for="file-input">
+                                        <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-right-file-input-label" alt="pin image">
+                                    </label>
+                                    <input type="file" id="file-input" class="order__texts-right-file-input"> 
                                 </div>
                             </div>
                             <div class="order__texts-right-subjects">
@@ -299,8 +302,8 @@
                         </div>
                         <div class="order__texts-left">
                             <div class="order__texts-left-input">
-                                <p class="order__texts-title">brief:</p>
-                                <textarea class="order__texts-left-input-textarea" cols="30" rows="10"></textarea>
+                                <p class="order__texts-left-title">brief:</p>
+                                <textarea class="order__texts-left-input-textarea" cols="30" rows="6" placeholder="about your business"></textarea>
                             </div>
                             <button type="submit" class="order__texts-left-btn">Confrim</button>
                         </div>
