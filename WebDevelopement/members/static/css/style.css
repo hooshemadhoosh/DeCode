@@ -570,6 +570,7 @@ body {
     height: 25px;
     border: 2px solid var(--white-color);
     padding: .2rem;
+    cursor: pointer;
     transition: all .2s;
 }
 .order__texts-right-file-input-label:hover {
@@ -593,6 +594,7 @@ body {
     background-color: var(--blue-color);
     color: var(--white-color);
     border: none;
+    cursor: pointer;
 }
 
 .order__texts-dropdown-btn-img {
@@ -665,6 +667,7 @@ body {
     font-size: 1rem;
     padding: .5rem 0;
     margin-left: auto;
+    cursor: pointer;
     transition: all .2s;
 }
 .order__texts-left-btn:hover {
