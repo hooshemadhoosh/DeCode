@@ -522,7 +522,9 @@
     
     .menu__right {
         display: flex;
-        gap: 8rem;
+    }
+    .menu__right * + * {
+        margin-left: 8rem;
     }
 
     /* Header & Templates */
