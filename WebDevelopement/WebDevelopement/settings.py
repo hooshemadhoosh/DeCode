@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-mci-a)9+-2l&)$eki^q(t^c+4sij0ujx(hak#bkc01ek6ltf!p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','192.168.1.101','192.168.1.7']
 
 
 # Application definition
@@ -133,7 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #--------------Email--------------
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT=587
-EMAIL_HOST_USER="decodenotifier@gamil.com"
+EMAIL_HOST_USER="decodenotifier@gmail.com"
 EMAIL_HOST_PASSWORD="jbymptmgldkncfjq"
 EMAIL_USE_TLS=True
 EMAIL_USE_SSL = False

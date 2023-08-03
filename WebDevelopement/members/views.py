@@ -9,7 +9,7 @@ from django.core.mail import send_mail
 def HelloWorldPage(request):
     return HttpResponse("Bonjour World!")
 def Home(request):
-    #send_mail("Hello World","this is a test","decodenotifier@gamil.com",["decodenotifier@gamil.com"],fail_silently=False)
+    send_mail("Hello World","this is a test","decodenotifier@gmail.com",["decodenotifier@gmail.com"],fail_silently=False)
     return render(request,'index.html')
 def Members(request):
     from members.models import Members
