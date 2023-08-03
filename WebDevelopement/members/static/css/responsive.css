@@ -46,12 +46,8 @@
     }
 
     .section__title {
-        font-size: 1.9rem;
-    }
-
-    .footer__block-images {
-        width: 30px;
-    }
+        font-size: 2rem;
+    } 
 
     /* Menu */
     .menu-mobile {
@@ -148,74 +144,6 @@
         height: 32px;
     }
 
-    /* Whoarewe */
-    .whoarewe__slider {
-        width: 420px;
-    }
-    
-    .whoarewe__slider-content {
-        height: 365px;
-        padding: 2rem;
-    }
-    
-    .whoarewe__slider-title {
-        font-size: 1.6rem;
-    }
-    
-    .whoarewe__slider-description {
-        font-size: 1.2rem;
-    }
-    
-    .whoarewe__slider-person {
-        font-size: 1.1rem;
-    }
-    
-    .whoarewe__slider-person-image {
-        width: 40px;
-        height: 40px;
-    }
-
-    /* Order */      
-    .order__texts-right-name-title,
-    .order__texts-right-file-title,
-    .order__texts-left-title {
-        font-size: 1.3rem;
-    }
-    
-    .order__texts-dropdown-btn {
-        font-size: 1.3rem;
-    }
-    
-    .order__texts-dropdown-btn-img {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .order__texts-dropdown {
-        width: 100%;
-        gap: .9rem;
-        font-size: .9rem;
-        padding: .9rem;
-    }
-    
-    .order__texts-left-input-textarea {
-        font-size: 1.4rem;
-    }
-    .order__texts-left-input-textarea::placeholder {
-        font-size: .9rem;
-    }
-    
-    .order__texts-left-btn {
-        width: 100px;
-        font-size: 1.1rem;
-        padding: .8rem 0;
-    }
-
-    .order__flag-image {
-        width: 45px;
-        height: 315px;
-        top: -285px;
-    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -361,31 +289,6 @@
     }
 
     /* Whoarewe */
-    .whoarewe__slider {
-        width: 460px;
-    }
-    
-    .whoarewe__slider-content {
-        height: 390px;
-    }
-    
-    .whoarewe__slider-title {
-        font-size: 1.8rem;
-    }
-    
-    .whoarewe__slider-description {
-        font-size: 1.4rem;
-    }
-    
-    .whoarewe__slider-person {
-        font-size: 1.2rem;
-    }
-    
-    .whoarewe__slider-person-image {
-        width: 45px;
-        height: 45px;
-    }
-
     .whoarewe__bottom-right-images img:nth-child(4) {
         display: block;
     }
@@ -797,16 +700,7 @@
         display: block;
     }
 
-    /* Whoarewe */   
-    .whoarewe__slider-title {
-        font-size: 2rem;
-    }
-    
-    .whoarewe__slider-person-image {
-        width: 50px;
-        height: 50px;
-    }
-
+    /* Whoarewe */
     .whoarewe__bottom-right-images img:nth-child(7),
     .whoarewe__bottom-right-images img:nth-child(8) {
         display: block;
