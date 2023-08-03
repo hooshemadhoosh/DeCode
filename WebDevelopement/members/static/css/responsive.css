@@ -46,8 +46,17 @@
     }
 
     .section__title {
+<<<<<<< HEAD
         font-size: 2rem;
     } 
+=======
+        font-size: 1.9rem;
+    }
+
+    .footer__block-images {
+        width: 30px;
+    }
+>>>>>>> ccabefc (404 test and footer added)
 
     /* Menu */
     .menu-mobile {
