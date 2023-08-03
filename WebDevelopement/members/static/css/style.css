@@ -439,7 +439,11 @@ body {
 }
 
 .whoarewe__slider-description {
+<<<<<<< HEAD
     font-size: 1.1rem;
+=======
+    font-size: 1rem;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 .whoarewe__slider-person {
@@ -496,12 +500,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+<<<<<<< HEAD
     padding-left: 1rem;
+=======
+    align-items: center;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     gap: 2rem;
 }
 
 .order__section__title {
     text-align: center;
+<<<<<<< HEAD
+=======
+    width: min-content;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 .order__title-green {
@@ -517,10 +529,19 @@ body {
 }
 
 .order__texts-right {
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+=======
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    text-align: center;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 .order__texts-right-specifictions {
@@ -531,7 +552,12 @@ body {
 }
 
 .order__texts-right-name-title,
+<<<<<<< HEAD
 .order__texts-right-file-title {
+=======
+.order__texts-right-file-title,
+.order__texts-left-title {
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     font-size: 1.2rem;
 }
 
@@ -547,6 +573,7 @@ body {
     color: inherit;
     font-family: inherit;
     font-size: .9rem;
+<<<<<<< HEAD
 }
 
 .order__texts-right-file {
@@ -555,6 +582,33 @@ body {
 
 .order__texts-right-file-input {
     background-color: transparent;
+=======
+    opacity: .5;
+}
+
+.order__texts-right-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.order__texts-right-file-input {
+    display: none;
+}
+
+.order__texts-right-file-input-label {
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--white-color);
+    padding: .2rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.order__texts-right-file-input-label:hover {
+    filter: invert(64%) sepia(85%) saturate(1012%) hue-rotate(333deg) brightness(102%) contrast(98%);
+    border-color: var(--orange-color);
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 .order__texts-right-subjects {
@@ -562,16 +616,27 @@ body {
 }
 
 .order__texts-dropdown-btn {
+<<<<<<< HEAD
     width: 240px;
     height: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1rem;
+=======
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    margin: auto;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     font-family: inherit;
     background-color: var(--blue-color);
     color: var(--white-color);
     border: none;
+<<<<<<< HEAD
 }
 
 .order__texts-dropdown-btn-img {
@@ -583,6 +648,20 @@ body {
     display: none;
 <<<<<<< HEAD
 =======
+=======
+    cursor: pointer;
+}
+
+.order__texts-dropdown-btn-img {
+    width: 18px;
+    height: 18px;
+}
+
+.order__texts-dropdown {
+    width: 90%;
+    height: 100px;
+    display: none;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     align-items: center;
     flex-wrap: wrap;
     gap: .8rem;
@@ -610,7 +689,10 @@ body {
 }
 .order__texts-dropdown-li-activated {
     color: var(--orange-color);
+<<<<<<< HEAD
 >>>>>>> d1fc16e (Completing order form)
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 .order__texts-left {
@@ -621,7 +703,10 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 .order__texts-left-input-textarea {
     border: none;
     margin-top: .5rem;
@@ -647,6 +732,10 @@ body {
     font-size: 1rem;
     padding: .5rem 0;
     margin-left: auto;
+<<<<<<< HEAD
+=======
+    cursor: pointer;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     transition: all .2s;
 }
 .order__texts-left-btn:hover {
@@ -654,7 +743,10 @@ body {
     border-color: var(--orange-color);
 }
 
+<<<<<<< HEAD
 >>>>>>> d1fc16e (Completing order form)
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 .order__bottom-left-images img:nth-child(3),
 .order__bottom-left-images img:nth-child(4), 
 .order__bottom-left-images img:nth-child(5), 
@@ -679,9 +771,13 @@ body {
     right: 0;
     top: -190px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     z-index: 18;
 >>>>>>> d1fc16e (Completing order form)
+=======
+    z-index: 18;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 /* ------ Finish Order ------ */

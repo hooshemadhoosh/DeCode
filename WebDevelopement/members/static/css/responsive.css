@@ -47,16 +47,22 @@
 
     .section__title {
 <<<<<<< HEAD
+<<<<<<< HEAD
         font-size: 2rem;
     } 
 =======
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
         font-size: 1.9rem;
     }
 
     .footer__block-images {
         width: 30px;
     }
+<<<<<<< HEAD
 >>>>>>> ccabefc (404 test and footer added)
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 
     /* Menu */
     .menu-mobile {
@@ -67,8 +73,11 @@
     .header__cloud1-image, 
     .templates__cloud1-image,
     .order__cloud1-image {
+<<<<<<< HEAD
     .templates__cloud1-image,
     .order__cloud1-image {
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
         width: 78px;
         height: 60px;
     }
@@ -166,11 +175,19 @@
     }
     
     .whoarewe__slider-title {
+<<<<<<< HEAD
         font-size: 1.7rem;
     }
     
     .whoarewe__slider-description {
         font-size: 1.3rem;
+=======
+        font-size: 1.6rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.2rem;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     }
     
     .whoarewe__slider-person {
@@ -179,7 +196,10 @@
     
     .whoarewe__slider-person-image {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
         width: 40px;
         height: 40px;
     }
@@ -221,9 +241,15 @@
     }
 
     .order__flag-image {
+<<<<<<< HEAD
 >>>>>>> d1fc16e (Completing order form)
         width: 45px;
         height: 45px;
+=======
+        width: 45px;
+        height: 315px;
+        top: -285px;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     }
 }
 
@@ -370,6 +396,31 @@
     }
 
     /* Whoarewe */
+    .whoarewe__slider {
+        width: 460px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 390px;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 1.8rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.4rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.2rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 45px;
+        height: 45px;
+    }
+
     .whoarewe__bottom-right-images img:nth-child(4) {
         display: block;
     }
@@ -393,6 +444,87 @@
     .whoarewe__slider-person-image {
         width: 50px;
         height: 50px;
+    }
+    
+    .order__texts-right-specifictions {
+        gap: 2.5rem;
+    }
+    
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 1.5rem;
+    }
+    
+    .order__texts-right-name-input {
+        padding: .8rem;
+        font-size: 1.1rem;
+    }
+    .order__texts-right-name-input::placeholder {
+        font-size: 1rem;
+    }
+    
+    .order__texts-right-file-input-label {
+        width: 30px;
+        height: 30px;
+        padding: .4rem;
+    }
+    
+    .order__texts-dropdown-btn {
+        font-size: 1.5rem;
+    }
+    
+    .order__texts-dropdown-btn-img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .order__texts-dropdown {
+        height: 120px;
+        gap: .9rem;
+        font-size: .9rem;
+        padding: .9rem;
+        margin-top: .6rem;
+    }
+    
+    .order__texts-left {
+        gap: 1.5rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: 1rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 110px;
+        font-size: 1.2rem;
+    }
+
+    .order__bottom-left-images img:nth-child(4) {
+        display: block;
+    }
+    
+    .order__flag-image {
+        width: 60px;
+        height: 420px;
+        top: -380px;
+    }
+
+    /* Order */
+    .order__container {
+        gap: 2.5rem;
+    }
+    
+    .order__texts {
+        gap: 2.5rem;
+    }
+    
+    .order__texts-right {
+        gap: 2.5rem;
     }
     
     .order__texts-right-specifictions {
@@ -725,7 +857,10 @@
         height: 80px;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 
     /* Order */   
     .order__texts {
@@ -795,7 +930,10 @@
         height: 525px;
         top: -475px;
     }
+<<<<<<< HEAD
 >>>>>>> d1fc16e (Completing order form)
+=======
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
 }
 
 @media only screen and (min-width: 1280px) {
@@ -865,6 +1003,7 @@
         display: block;
     }
 
+<<<<<<< HEAD
     /* Whoarewe */
     .whoarewe__slider {
         width: 480px;
@@ -885,6 +1024,16 @@
     .whoarewe__slider-person-image {
         width: 55px;
         height: 55px;
+=======
+    /* Whoarewe */   
+    .whoarewe__slider-title {
+        font-size: 2rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 50px;
+        height: 50px;
+>>>>>>> 2cbe497e99fd537e39d4134c8d724bd3ba154da5
     }
 
     .whoarewe__bottom-right-images img:nth-child(7),
@@ -965,6 +1114,67 @@
     /* Whoarewe */
     .whoarewe__bottom-right-images img:nth-child(9) {
         display: block;
+    }
+
+    /* Order */
+    .order__texts {
+        gap: 4rem;
+    }
+    
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 2rem;
+    }
+    
+    .order__texts-right-name-input {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    .order__texts-right-name-input::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-right-file-input-label {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .order__texts-dropdown-btn {
+        gap: .7rem;
+        font-size: 2rem;
+    }
+    
+    .order__texts-dropdown {
+        height: 150px;
+        gap: 1.2rem;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        width: 437.5px;
+        height: 250px;
+        font-size: 2rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 140px;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .order__bottom-left-images img:nth-child(9) {
+        display: block;
+    }
+
+    .order__flag-image {
+        width: 97.5px;
+        height: 682.5px;
+        top: -617.5px;
     }
 }
 
