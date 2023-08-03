@@ -46,7 +46,7 @@
     }
 
     .section__title {
-        font-size: 2rem;
+        font-size: 1.9rem;
     } 
 
     /* Menu */
@@ -56,7 +56,8 @@
 
     /* Header & Templates */
     .header__cloud1-image, 
-    .templates__cloud1-image {
+    .templates__cloud1-image,
+    .order__cloud1-image {
         width: 78px;
         height: 60px;
     }
@@ -86,7 +87,8 @@
         top: -50px;
     }
     
-    .header__grasses1-image {
+    .header__grasses1-image,
+    .order__grasses1-image {
         width: 100px;
         height: 50px;
         top: -50px;
@@ -141,6 +143,74 @@
         height: 32px;
     }
 
+    /* Whoarewe */
+    .whoarewe__slider {
+        width: 420px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 365px;
+        padding: 2rem;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 1.6rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.2rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.1rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Order */      
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-dropdown-btn {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-dropdown-btn-img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .order__texts-dropdown {
+        width: 100%;
+        gap: .9rem;
+        font-size: .9rem;
+        padding: .9rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        font-size: 1.4rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: .9rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 100px;
+        font-size: 1.1rem;
+        padding: .8rem 0;
+    }
+
+    .order__flag-image {
+        width: 45px;
+        height: 315px;
+        top: -285px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -179,6 +249,17 @@
     .whoarewe__bottom-right-images img:nth-child(3) {
         display: block;
     }
+
+    /* Order */
+    .order__bottom-left-images img:nth-child(3) {
+        display: block;
+    }
+    
+    .order__flag-image {
+        width: 52.5px;
+        height: 367.5px;
+        top: -332.5px;
+    }    
 }
 
 
@@ -265,6 +346,31 @@
     }
 
     /* Whoarewe */
+    .whoarewe__slider {
+        width: 460px;
+    }
+    
+    .whoarewe__slider-content {
+        height: 390px;
+    }
+    
+    .whoarewe__slider-title {
+        font-size: 1.8rem;
+    }
+    
+    .whoarewe__slider-description {
+        font-size: 1.4rem;
+    }
+    
+    .whoarewe__slider-person {
+        font-size: 1.2rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 45px;
+        height: 45px;
+    }
+
     .whoarewe__bottom-right-images img:nth-child(4) {
         display: block;
     }
@@ -275,6 +381,87 @@
     
     .whoarewe__grasses2-image {
         left: -125%;
+    }
+
+    /* Order */
+    .order__container {
+        gap: 2.5rem;
+    }
+    
+    .order__texts {
+        gap: 2.5rem;
+    }
+    
+    .order__texts-right {
+        gap: 2.5rem;
+    }
+    
+    .order__texts-right-specifictions {
+        gap: 2.5rem;
+    }
+    
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 1.5rem;
+    }
+    
+    .order__texts-right-name-input {
+        padding: .8rem;
+        font-size: 1.1rem;
+    }
+    .order__texts-right-name-input::placeholder {
+        font-size: 1rem;
+    }
+    
+    .order__texts-right-file-input-label {
+        width: 30px;
+        height: 30px;
+        padding: .4rem;
+    }
+    
+    .order__texts-dropdown-btn {
+        font-size: 1.5rem;
+    }
+    
+    .order__texts-dropdown-btn-img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .order__texts-dropdown {
+        height: 120px;
+        gap: .9rem;
+        font-size: .9rem;
+        padding: .9rem;
+        margin-top: .6rem;
+    }
+    
+    .order__texts-left {
+        gap: 1.5rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: 1rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 110px;
+        font-size: 1.2rem;
+    }
+
+    .order__bottom-left-images img:nth-child(4) {
+        display: block;
+    }
+    
+    .order__flag-image {
+        width: 60px;
+        height: 420px;
+        top: -380px;
     }
 }
 
@@ -295,6 +482,12 @@
     /* Whoarewe */
     .whoarewe__bottom-right-images img:nth-child(5),
     .whoarewe__bottom-right-images img:nth-child(6) {
+        display: block;
+    }
+
+    /* Order */
+    .order__bottom-left-images img:nth-child(5),
+    .order__bottom-left-images img:nth-child(6) {
         display: block;
     }
 }
@@ -329,12 +522,15 @@
     
     .menu__right {
         display: flex;
-        gap: 8rem;
+    }
+    .menu__right * + * {
+        margin-left: 8rem;
     }
 
     /* Header & Templates */
     .header__cloud1-image, 
-    .templates__cloud1-image {
+    .templates__cloud1-image,
+    .order__cloud1-image {
         width: 104px;
         height: 80px;
     }
@@ -364,7 +560,8 @@
         top: -75px;
     }
     
-    .header__grasses1-image {
+    .header__grasses1-image,
+    .order__grasses1-image {
         width: 140px;
         height: 70px;
         top: -70px;
@@ -433,14 +630,83 @@
     }
     
     .slider-btn{
-        width: 30px;
-        height: 48px;
+        width: 25px;
+        height: 40px;
     }
 
     /* Whoarewe */
     .whoarewe__cloud3-image {
         width: 184px;
         height: 80px;
+    }
+
+    /* Order */   
+    .order__texts {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 1.7rem;
+    }
+
+    .order__texts-right-name-title {
+        text-align: start;
+    }
+
+    .order__texts-right-specifictions {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .order__texts-right-name-input {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+    .order__texts-right-name-input::placeholder {
+        font-size: 1.2rem;
+    }
+    
+    .order__texts-right-file-input-label {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .order__texts-dropdown-btn {
+        gap: .6rem;
+        font-size: 1.7rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .order__texts-dropdown {
+        height: 140px;
+        gap: 1rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        width: 350px;
+        height: 200px;
+        font-size: 1.8rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: 1.1rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 120px;
+        font-size: 1.3rem;
+        padding: .9rem 0;
+    }
+
+    .order__flag-image {
+        width: 75px;
+        height: 525px;
+        top: -475px;
     }
 }
 
@@ -506,7 +772,16 @@
         display: block;
     }
 
-    /* Whoarewe */
+    /* Whoarewe */   
+    .whoarewe__slider-title {
+        font-size: 2rem;
+    }
+    
+    .whoarewe__slider-person-image {
+        width: 50px;
+        height: 50px;
+    }
+
     .whoarewe__bottom-right-images img:nth-child(7),
     .whoarewe__bottom-right-images img:nth-child(8) {
         display: block;
@@ -514,6 +789,18 @@
 
     .whoarewe__grasses2-image {
         left: -80%;
+    }
+
+    /* Order */
+    .order__bottom-left-images img:nth-child(7),
+    .order__bottom-left-images img:nth-child(8) {
+        display: block;
+    }
+
+    .order__flag-image {
+        width: 90px;
+        height: 630px;
+        top: -570px;
     }
 }
 
@@ -569,6 +856,67 @@
     .whoarewe__bottom-right-images img:nth-child(9) {
         display: block;
     }
+
+    /* Order */
+    .order__texts {
+        gap: 4rem;
+    }
+    
+    .order__texts-right-name-title,
+    .order__texts-right-file-title,
+    .order__texts-left-title {
+        font-size: 2rem;
+    }
+    
+    .order__texts-right-name-input {
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    .order__texts-right-name-input::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-right-file-input-label {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .order__texts-dropdown-btn {
+        gap: .7rem;
+        font-size: 2rem;
+    }
+    
+    .order__texts-dropdown {
+        height: 150px;
+        gap: 1.2rem;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+    
+    .order__texts-left-input-textarea {
+        width: 437.5px;
+        height: 250px;
+        font-size: 2rem;
+    }
+    .order__texts-left-input-textarea::placeholder {
+        font-size: 1.3rem;
+    }
+    
+    .order__texts-left-btn {
+        width: 140px;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .order__bottom-left-images img:nth-child(9) {
+        display: block;
+    }
+
+    .order__flag-image {
+        width: 97.5px;
+        height: 682.5px;
+        top: -617.5px;
+    }
 }
 
 @media only screen and (min-width: 1800px) {
@@ -591,7 +939,8 @@
 
     /* Header & Templates */
     .header__cloud1-image, 
-    .templates__cloud1-image {
+    .templates__cloud1-image,
+    .order__cloud1-image {
         width: 117px;
         height: 90px;
     }
@@ -621,7 +970,8 @@
         top: -85px;
     }
     
-    .header__grasses1-image {
+    .header__grasses1-image,
+    .order__grasses1-image {
         width: 170px;
         height: 85px;
         top: -85px;
@@ -665,9 +1015,11 @@
     .templates__slider-sliding {
         font-size: 2rem;
     }
-    
-    .slider-btn{
-        width: 40px;
-        height: 64px;
+
+    /* Order */
+    .order__flag-image {
+        width: 112.5px;
+        height: 787.5px;
+        top: -712.5px;
     }
 }
