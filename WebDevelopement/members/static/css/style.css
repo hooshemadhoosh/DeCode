@@ -533,10 +533,6 @@ body {
     gap: 2rem;
 }
 
-.order__texts-right-name {
-
-}
-
 .order__texts-right-name-title,
 .order__texts-right-file-title,
 .order__texts-left-title {
@@ -699,7 +695,6 @@ body {
 
 .order__flag-image {
     width: 30px;
-    height: 210px;
     position: absolute;
     right: 0;
     top: -190px;
@@ -707,3 +702,64 @@ body {
 }
 
 /* ------ Finish Order ------ */
+
+
+/* ------ Start Footer ------ */
+
+.footer__container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-x: clip;
+}
+
+.footer__content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+}
+
+.footer__social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer__social-media-link {
+    width: 40px;
+    height: 40px;
+}
+
+.footer__social-media-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__images {
+    position: relative;
+    display: flex;
+}
+
+.footer__block-images {
+    width: 20px;
+}
+
+.footer__black-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+/* ------ Finish Footer ------ */

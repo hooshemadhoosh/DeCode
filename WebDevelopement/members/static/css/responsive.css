@@ -47,7 +47,11 @@
 
     .section__title {
         font-size: 1.9rem;
-    } 
+    }
+
+    .footer__block-images {
+        width: 30px;
+    }
 
     /* Menu */
     .menu-mobile {
@@ -64,7 +68,8 @@
 
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 60px);
     }
 
@@ -221,10 +226,15 @@
         height: 70px;
     }
 
+    .footer__block-images {
+        width: 35px;
+    }
+
     /* Header & Templates */
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 70px);
     }
 
@@ -285,6 +295,10 @@
         font-size: 2.5rem;
     }
 
+    .footer__block-images {
+        width: 40px;
+    }
+
     /* Menu */
     .menu-mobile,
     .menu-mobile__side {
@@ -298,7 +312,8 @@
     /* Header & Templates */
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 80px);
     }
 
@@ -515,6 +530,10 @@
         font-size: 3rem;
     }
 
+    .footer__block-images {
+        width: 50px;
+    }
+
     /* Menu */
     .menu-desktop {
         padding: 2rem 6rem;
@@ -537,7 +556,8 @@
 
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 100px);
     }
 
@@ -722,10 +742,15 @@
         height: 120px;
     }
 
+    .footer__block-images {
+        width: 60px;
+    }
+
     /* Header & Templates */
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 120px);
     }
 
@@ -818,10 +843,15 @@
         height: 130px;
     }
 
+    .footer__block-images {
+        width: 65px;
+    }
+
     /* Header & Templates */
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 130px);
     }
     
@@ -937,6 +967,10 @@
         font-size: 4rem;
     }
 
+    .footer__block-images {
+        width: 75px;
+    }
+
     /* Header & Templates */
     .header__cloud1-image, 
     .templates__cloud1-image,
@@ -947,7 +981,8 @@
 
     .header__content,
     .templates__content,
-    .whoarewe__content {
+    .whoarewe__content,
+    .order__content {
         height: calc(100% - 150px);
     }
     
