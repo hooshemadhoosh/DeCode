@@ -22,6 +22,30 @@ blackOverlay.addEventListener('click' , () => {
     closeMenu()
 })
 
+// ----------> Show drop down & Show activated li
+const orderDropdown = document.querySelector('.order__texts-dropdown')
+const orderDropdownBtn = document.querySelector('.order__texts-dropdown-btn')
+const orderDropdownChilds = orderDropdown.children
+
+orderDropdownBtn.addEventListener('click' , () => {
+    if(orderDropdown.classList.contains('order__texts-dropdown--shown')) {
+        orderDropdown.classList.remove('order__texts-dropdown--shown')
+    } else {
+        orderDropdown.classList.add('order__texts-dropdown--shown')
+    }
+})
+
+for(let orderDropdownChild of orderDropdownChilds) {
+    orderDropdownChild.addEventListener('click' , () => {
+        for(let orderDropdownChild of orderDropdownChilds) {
+            if(orderDropdownChild.classList.contains('order__texts-dropdown-li-activated')) {
+                orderDropdownChild.classList.remove('order__texts-dropdown-li-activated')
+            }
+        }
+        orderDropdownChild.classList.add('order__texts-dropdown-li-activated')
+    })
+}
+
 
 // ----------> Super Mario Animations
 let superMarioImage = document.querySelector('.super-mario-image')
