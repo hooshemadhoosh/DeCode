@@ -15,28 +15,28 @@
     <menu class="menu">
         <div class="menu-desktop">
             <div class="menu__left">
-                <a href="#" class="menu-link--hover">OTHER TEMPLATES</a>
+                <a href="#templates" class="menu-link--hover">OTHER TEMPLATES</a>
             </div>
             <div class="menu__right">
-                <a href="#" class="menu-link--hover">who are we?</a>
-                <a href="#" class="menu-link--hover">contact us</a>
-                <a href="#" class="menu-link--hover">order!</a>
+                <a href="#whoarewe" class="menu-link--hover">who are we?</a>
+                <a href="#order" class="menu-link--hover">order!</a>
+                <a href="#contactus" class="menu-link--hover">contact us</a>
             </div>
         </div>
         <div class="menu-mobile">
             <button class="menu-mobile__btn--show">
                 <img src="{%static '/images/header & menu/menu-icon.png'%}" class="menu-mobile__btn-image--show" alt="menu icon">
             </button>
-            <a href="#" class="menu-mobile__link menu-link--hover">OTHER TEMPLATES</a>
+            <a href="#templates" class="menu-mobile__link menu-link--hover">OTHER TEMPLATES</a>
         </div>
         <div class="menu-mobile__side">
             <button class="menu-mobile__btn--close">
                 <img src="{%static '/images/header & menu/close-icon.png' %}" class="menu-mobile__btn-image--close" alt="menu icon">
             </button> 
             <div class="menu-mobile__list"> 
-                <a href="#" class="menu-mobile__list-item menu-link--hover">who are we?</a>
-                <a href="#" class="menu-mobile__list-item menu-link--hover">contact us</a>
-                <a href="#" class="menu-mobile__list-item menu-link--hover">order!</a>
+                <a href="#whoarewe" class="menu-mobile__list-item menu-link--hover">who are we?</a>
+                <a href="#order" class="menu-mobile__list-item menu-link--hover">order!</a>
+                <a href="#contactus" class="menu-mobile__list-item menu-link--hover">contact us</a>
             </div>              
         </div>
     </menu>
@@ -210,7 +210,7 @@
                         </div>               
                         <img src="{%static '/images/genreal/prev-btn.png' %}" class="slider-btn swiper-button-prev" alt="prev button">
                         <img src="{%static '/images/genreal/next-btn.png' %}" class="slider-btn swiper-button-next" alt="next button">
-                        <div class="slider-scrollbar swiper-scrollbar"></div>
+                        <div class="whoarewe__slider-scrollbar swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
@@ -250,6 +250,154 @@
             </div>
         </div>
     </section>
+
+    <section class="order" id="order">
+        <div class="order__content">
+            <div class="container">
+                <div class="order__container">
+                    <h2 class="order__section__title section__title">
+                        type
+                        <span class="order__title-green">site specifications</span>
+                    </h2>
+                    <form class="order__texts">
+                        <div class="order__texts-right">
+                            <div class="order__texts-right-specifictions">
+                                <div class="order__texts-right-name">
+                                    <p class="order__texts-right-name-title">business name:</p>
+                                    <input class="order__texts-right-name-input" type="text" placeholder="the name of the site">
+                                </div>
+                                <div class="order__texts-right-file">
+                                    <p class="order__texts-right-file-title">attach a file</p>
+                                    <label for="file-input">
+                                        <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-right-file-input-label" alt="pin image">
+                                    </label>
+                                    <input type="file" id="file-input" class="order__texts-right-file-input"> 
+                                </div>
+                            </div>
+                            <div class="order__texts-right-subjects">
+                                <button type="button" class="order__texts-dropdown-btn">
+                                    what is your site about?
+                                    <img src="{%static '/images/genreal/arrow.png' %}" class="order__texts-dropdown-btn-img" alt="arrow">
+                                </button>
+                                <ul class="order__texts-dropdown">
+                                    <li>Fashion</li>
+                                    <li>Art</li>
+                                    <li>Personal brand</li>
+                                    <li>Music</li>
+                                    <li>Nature</li>
+                                    <li>Educrtion</li>
+                                    <li>bahaman</li>
+                                    <li>folan bahman</li>
+                                    <li>folan</li>
+                                    <li>bisar</li>
+                                    <li>folan bahman</li>
+                                    <li>bisar</li>
+                                    <li>folan bisar</li>
+                                    <li>fola</li>
+                                    <li>folan</li>
+                                    <li>folan bah</li>
+                                    <li>bisar</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="order__texts-left">
+                            <div class="order__texts-left-input">
+                                <p class="order__texts-left-title">brief:</p>
+                                <textarea class="order__texts-left-input-textarea" cols="30" rows="6" placeholder="about your business"></textarea>
+                            </div>
+                            <button type="submit" class="order__texts-left-btn">Confrim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="order__images">
+            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="order__cloud1-image" alt="cloud 1">
+            <div class="order__bottom-images">
+                <div class="order__bottom-left-images">
+                    <img src="{%static '/images/genreal/grasses-1.png' %}" class="order__grasses1-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                </div>
+                <div class="order__bottom-right-images">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/flag.png' %}" class="order__flag-image" alt="flag">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contactus">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__social-media">         
+                    <a href="#" class="footer__social-media-link">
+                        <img src="{%static '/images/genreal/telegram-icon.png' %}" alt="telegram png">
+                    </a>
+                    <a href="#" class="footer__social-media-link">
+                        <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
+                    </a>
+                    <a href="#" class="footer__social-media-link">
+                        <img src="{%static '/images/genreal/instagram-icon.png' %}" alt="instagram png">
+                    </a>
+                </div>
+                <p>All rights reserved</p>
+            </div>
+            <div class="footer__images">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+            </div>
+            <div class="footer__black-overlay"></div>
+        </div>
+    </footer>
     
     <div class="black-overlay"></div>
 
