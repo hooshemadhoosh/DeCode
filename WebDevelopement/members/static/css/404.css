@@ -1,0 +1,12 @@
+@import "fonts.css";
+@import "variables.css";
+
+body {
+    font-family: 'Super Mario';
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    font-size: 1.8rem;
+    line-height: 1.25;
+    height: 100vh;
+    z-index: 0;
+}
