@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+
+.container {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name,
+.subject,
+.image,
+.brief {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: .5rem;
+}
+
+.name,
+.image {
+    margin: 2rem 0;
+}
+
+.name {
+    background-color: #91C8E4;
+}
+
+.subject {
+    background-color: #749BC2;
+}
+
+.brief {
+    background-color: #F6F4EB;
+}
+
+.image {
+    padding: 0;
+}
+
+p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+
+img {
+    width: 500px;
+    margin-left: 1rem;
+}
