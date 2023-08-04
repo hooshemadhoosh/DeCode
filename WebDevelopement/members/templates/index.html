@@ -259,12 +259,13 @@
                         type
                         <span class="order__title-green">site specifications</span>
                     </h2>
-                    <form class="order__texts">
+                    <form class="order__texts" action="" method="post">
+                        {% csrf_token %}
                         <div class="order__texts-right">
                             <div class="order__texts-right-specifictions">
                                 <div class="order__texts-right-name">
                                     <p class="order__texts-right-name-title">business name:</p>
-                                    <input class="order__texts-right-name-input" type="text" placeholder="the name of the site">
+                                    <input class="order__texts-right-name-input" type="text" name="bname" placeholder="the name of the site">
                                 </div>
                                 <div class="order__texts-right-file">
                                     <p class="order__texts-right-file-title">attach a file</p>

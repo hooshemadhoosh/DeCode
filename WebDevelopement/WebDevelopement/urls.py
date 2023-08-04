@@ -20,7 +20,7 @@ from members import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hi/', views.HelloWorldPage ),
+    path('order/', views.HelloWorldPage ),
     path('', views.Home ),
     path('members/', views.Members ),
     path('members/detail/<int:id>', views.Detail ),

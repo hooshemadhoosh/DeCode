@@ -11,7 +11,7 @@ from django.template.loader import render_to_string
 
 
 def HelloWorldPage(request):
-    return HttpResponse("Bonjour World!")
+    return render(request,'order.html')
 def Home(request):
     subject = "DeCode teem presents"
     body = render_to_string('home.html')
