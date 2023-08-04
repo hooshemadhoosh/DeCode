@@ -3,13 +3,38 @@ from django.http import HttpResponse, HttpResponseRedirect
 from members.models import Members
 from django.conf import settings
 from django.core.mail import send_mail
+from email.mime.image import MIMEImage
+
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import render_to_string
 
 
 
 def HelloWorldPage(request):
     return HttpResponse("Bonjour World!")
 def Home(request):
-    send_mail("Hello World","this is a test","decodenotifier@gmail.com",["decodenotifier@gmail.com"],fail_silently=False)
+    subject = "DeCode teem presents"
+    body = render_to_string('home.html')
+    recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"]
+    reply_to = ['noreply@test.com']
+    msg = EmailMultiAlternatives(
+    subject,
+    body,
+    from_email=settings.EMAIL_HOST_USER,
+    to=recipients,
+    reply_to=reply_to
+    )
+    msg.mixed_subtype = 'related'
+    msg.content_subtype = 'html'
+    file_path = "D:\Projects\Python\DeCode\WebDevelopement\members\static\images\logo\decode logo.png"
+    # with open(file_path, 'r') as f:
+    #     data = f.read()
+    #     img = MIMEImage(data)
+    #     img.add_header('Content-ID', '<{name}>'.format(name="decode logo.png"))
+    #     img.add_header('Content-Disposition', 'inline', filename="decode logo.png")
+    # msg.attach(img)        
+    msg.send()
+    #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
     return render(request,'index.html')
 def Members(request):
     from members.models import Members

@@ -1,5 +1,5 @@
 /* ------ Start Main styles ------ */
-
+{% load static %}
 @import "fonts.css";
 @import "variables.css";
 @import "animations.css";
