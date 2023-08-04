@@ -1,1 +1,21 @@
-404 Error of hmh
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found</title>
+    <link rel="stylesheet" href="{%static '/css/reset.css' %}">
+    <link rel="stylesheet" href="{%static  '/css/404.css' %}">
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="title">404 Error</h1>
+        <h3 class="subtitle">Page not found</h3>
+        <img src="{%static '/images/genreal/Cloud-2.png %}" class="cloud2-image" alt="cloud2 image">
+        <img src="{%static '/images/genreal/Cloud-3.png %}" class="cloud3-image" alt="cloud3 image">
+    </main>
+    
+</body>
+</html>
