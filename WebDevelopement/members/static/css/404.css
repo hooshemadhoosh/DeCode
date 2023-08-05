@@ -16,6 +16,7 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -32,8 +33,14 @@ body {
 
 .cloud2-image {
     width: 40px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
 }
 
 .cloud3-image {
     width: 60px;
+    position: absolute;
+    top: 60%;
+    left: 70%;
 }
