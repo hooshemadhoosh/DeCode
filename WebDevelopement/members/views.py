@@ -5,10 +5,9 @@ from django.conf import settings
 from django.core.mail import send_mail
 from email.mime.image import MIMEImage
 
-from django.core.mail import EmailMultiAlternatives
+from django.core.mail import EmailMultiAlternatives, EmailMessage
 from django.template.loader import render_to_string
-
-
+from django.utils.html import strip_tags
 
 def HelloWorldPage(request):
     return render(request,'order.html')
@@ -17,16 +16,11 @@ def Home(request):
     body = render_to_string('home.html')
     recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"]
     reply_to = ['noreply@test.com']
-    msg = EmailMultiAlternatives(
-    subject,
-    body,
-    from_email=settings.EMAIL_HOST_USER,
-    to=recipients,
-    reply_to=reply_to
-    )
-    msg.mixed_subtype = 'related'
+    msg = EmailMessage(subject, body, settings.EMAIL_HOST_USER, recipients)
+    # msg.mixed_subtype = 'related'
     msg.content_subtype = 'html'
-    file_path = "D:\Projects\Python\DeCode\WebDevelopement\members\static\images\logo\decode logo.png"
+    msg.attach_file('db.sqlite3')
+    # file_path = "D:\Projects\Python\DeCode\WebDevelopement\members\static\images\logo\decode logo.png"
     # with open(file_path, 'r') as f:
     #     data = f.read()
     #     img = MIMEImage(data)
@@ -36,6 +30,10 @@ def Home(request):
     msg.send()
     #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
     return render(request,'index.html')
+
+def test(request):
+    return render(request,'home.html')
+
 def Members(request):
     from members.models import Members
     mymembers = Members.objects.all().values()
