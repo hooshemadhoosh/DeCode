@@ -1,11 +1,14 @@
 {% load static %}
+{% load css_inline %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specifictions</title>
+    {% css_inline %}
     <link rel="stylesheet" href="{%static '/css/order.css' %}">
+    {% end_css_inline %}
 </head>
 <body>
 
@@ -21,7 +24,7 @@
         </div>
         <div class="image">
             <h2>Logo Image:</h2>
-            <img src="{%static '/images/order specifictions/test-logo.jpg'%}" alt="Logo Image">
+            <img src="cid:logo" alt="Logo Image">
         </div>
         <div class="brief">
             <h2>Brief:</h2>

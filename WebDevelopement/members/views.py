@@ -12,23 +12,24 @@ from django.utils.html import strip_tags
 def HelloWorldPage(request):
     return render(request,'order.html')
 def Home(request):
-    subject = "DeCode teem presents"
-    body = render_to_string('home.html')
-    recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"]
-    reply_to = ['noreply@test.com']
-    msg = EmailMessage(subject, body, settings.EMAIL_HOST_USER, recipients)
-    # msg.mixed_subtype = 'related'
-    msg.content_subtype = 'html'
-    msg.attach_file('db.sqlite3')
-    # file_path = "D:\Projects\Python\DeCode\WebDevelopement\members\static\images\logo\decode logo.png"
-    # with open(file_path, 'r') as f:
-    #     data = f.read()
-    #     img = MIMEImage(data)
-    #     img.add_header('Content-ID', '<{name}>'.format(name="decode logo.png"))
-    #     img.add_header('Content-Disposition', 'inline', filename="decode logo.png")
-    # msg.attach(img)        
-    msg.send()
-    #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
+    if request.method == 'POST':
+        print(request.FILES)
+        subject = "DeCode teem presents"
+        body = render_to_string('order.html').strip()
+        recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"]
+        reply_to = ['noreply@test.com']
+        msg = EmailMultiAlternatives(subject, body,  settings.EMAIL_HOST_USER, recipients,)
+        msg.mixed_subtype = 'related'
+        msg.content_subtype = 'html'
+        msg.attach_file('db.sqlite3')
+        file_path = "members\static\images\logo\decode logo.png"
+        with open(file_path, 'rb') as f:
+            img = MIMEImage(f.read())
+            img.add_header('Content-ID', '<{name}>'.format(name="logo"))
+            img.add_header('Content-Disposition', 'inline', filename="logo")
+        msg.attach(img)        
+        msg.send()
+        #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
     return render(request,'index.html')
 
 def test(request):
