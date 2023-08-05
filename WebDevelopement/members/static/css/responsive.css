@@ -1,5 +1,5 @@
 /* Container */
-{% load static %}
+
 @media only screen and (min-width: 576px) {
     .container {
         max-width: 540px;
@@ -215,6 +215,16 @@
         width: 45px;
         height: 315px;
         top: -285px;
+    }
+
+    /* Footer */
+    .footer__social-media-link {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer__text {
+        font-size: 1.2rem;
     }
 }
 
@@ -478,6 +488,17 @@
         height: 420px;
         top: -380px;
     }
+
+    /* Footer */  
+    .footer__social-media-link {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+    
+    .footer__text {
+        font-size: 1.4rem;
+    }
 }
 
 @media only screen and (min-width: 920px) {
@@ -727,6 +748,16 @@
         width: 75px;
         height: 525px;
         top: -475px;
+    }
+
+    /* Footer */
+    .footer__social-media {
+        margin-bottom: 4rem;
+    }
+    
+    .footer__social-media-link:hover {
+        margin-bottom: 1rem;
+        transform: rotate(360deg);
     }
 }
 
