@@ -22,29 +22,41 @@ blackOverlay.addEventListener('click' , () => {
     closeMenu()
 })
 
-// ----------> Show drop down & Show activated li
-const orderDropdown = document.querySelector('.order__texts-dropdown')
-const orderDropdownBtn = document.querySelector('.order__texts-dropdown-btn')
-const orderDropdownChilds = orderDropdown.children
+// ----------> Email Validation
+let emialValidated = false
+const orderEmail = document.getElementById('orderEmail')
+const formElem = document.querySelector('.order__texts')
+const orderErrModal = document.querySelector('.order__err-modal')
+const orderSuccessModal = document.querySelector('.order__success-modal')
 
-orderDropdownBtn.addEventListener('click' , () => {
-    if(orderDropdown.classList.contains('order__texts-dropdown--shown')) {
-        orderDropdown.classList.remove('order__texts-dropdown--shown')
+orderEmail.addEventListener('keyup' , () => {
+    let emialValue = orderEmail.value
+
+    if(!emialValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        orderEmail.classList.add('order__texts-subject-input-err')
     } else {
-        orderDropdown.classList.add('order__texts-dropdown--shown')
+        orderEmail.classList.remove('order__texts-subject-input-err')
+        emialValidated = true
+    }
+    if (emialValue == '') {
+        orderEmail.classList.remove('order__texts-subject-input-err')
     }
 })
 
-for(let orderDropdownChild of orderDropdownChilds) {
-    orderDropdownChild.addEventListener('click' , () => {
-        for(let orderDropdownChild of orderDropdownChilds) {
-            if(orderDropdownChild.classList.contains('order__texts-dropdown-li-activated')) {
-                orderDropdownChild.classList.remove('order__texts-dropdown-li-activated')
-            }
-        }
-        orderDropdownChild.classList.add('order__texts-dropdown-li-activated')
-    })
-}
+formElem.addEventListener('submit' , (e) => {
+    if(!emialValidated) {
+        e.preventDefault()
+        orderErrModal.classList.add('order__err-modal--shown')
+        setTimeout(() => {
+            orderErrModal.classList.remove('order__err-modal--shown')
+        }, 3000);
+    } else {
+        orderSuccessModal.classList.add('order__success-modal--shown')
+        setTimeout(() => {
+            orderSuccessModal.classList.remove('order__success-modal--shown')
+        }, 3000);
+    }
+})
 
 
 // ----------> Super Mario Animations

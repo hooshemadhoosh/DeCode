@@ -516,7 +516,7 @@ body {
     gap: 2rem;
 }
 
-.order__texts-right {
+.order__texts-left {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -525,20 +525,22 @@ body {
     text-align: center;
 }
 
-.order__texts-right-specifictions {
+.order__texts-left-specifictions1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
 }
 
-.order__texts-right-name-title,
-.order__texts-right-file-title,
-.order__texts-left-title {
+.order__texts-left-name-title,
+.order__texts-left-file-title,
+.order__texts-left-title,
+.order__texts-subject-lable {
     font-size: 1.2rem;
 }
 
-.order__texts-right-name-input {
+.order__texts-left-name-input,
+.order__texts-subject-input {
     background-color: transparent;
     border: 2px solid var(--white-color);
     color: var(--white-color);
@@ -546,25 +548,26 @@ body {
     font-family: 'Super Mario';
     font-size: 1rem;
 }
-.order__texts-right-name-input::placeholder {
+.order__texts-left-name-input::placeholder,
+.order__texts-subject-input::placeholder {
     color: inherit;
     font-family: inherit;
     font-size: .9rem;
     opacity: .5;
 }
 
-.order__texts-right-file {
+.order__texts-left-file {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.order__texts-right-file-input {
+.order__texts-left-file-input {
     display: none;
 }
 
-.order__texts-right-file-input-label {
+.order__texts-left-file-input-label {
     width: 25px;
     height: 25px;
     border: 2px solid var(--white-color);
@@ -572,76 +575,34 @@ body {
     cursor: pointer;
     transition: all .2s;
 }
-.order__texts-right-file-input-label:hover {
+.order__texts-left-file-input-label:hover {
     filter: invert(64%) sepia(85%) saturate(1012%) hue-rotate(333deg) brightness(102%) contrast(98%);
     border-color: var(--orange-color);
 }
 
-.order__texts-right-subjects {
+.order__texts-left-subjects {
     position: relative;
-}
-
-.order__texts-dropdown-btn {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
-    text-align: center;
-    gap: .5rem;
-    font-size: 1.2rem;
-    margin: auto;
-    font-family: inherit;
-    background-color: var(--blue-color);
-    color: var(--white-color);
-    border: none;
-    cursor: pointer;
-}
-
-.order__texts-dropdown-btn-img {
-    width: 18px;
-    height: 18px;
-}
-
-.order__texts-dropdown {
-    width: 90%;
-    height: 100px;
-    display: none;
     align-items: center;
-    flex-wrap: wrap;
-    gap: .8rem;
-    position: absolute;
-    font-size: .8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--blue-color);
-    border: 2px solid var(--white-color);
-    padding: .8rem;
-    margin-top: .5rem;
-    z-index: 10;
-    overflow-y: scroll;
-    transition: all .2s;
 }
-.order__texts-dropdown--shown {
-    display: flex;
-}
-.order__texts-dropdown li {
-    transition: color .2s;
-    cursor: pointer;
-}
-.order__texts-dropdown li:hover {
-    color: var(--orange-color);
-}
-.order__texts-dropdown-li-activated {
-    color: var(--orange-color);
+.order__texts-left-subjects:first-child {
+    margin-bottom: 2rem;
 }
 
-.order__texts-left {
+.order__texts-subject-input-err {
+    border-color: #FE0000;
+}
+
+.order__texts-right {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.order__texts-left-input-textarea {
+.order__texts-right-input-textarea {
     border: none;
     margin-top: .5rem;
     background-color: var(--blue-color);
@@ -649,7 +610,7 @@ body {
     color: var(--white-color);
     padding: .5rem;
 }
-.order__texts-left-input-textarea::placeholder {
+.order__texts-right-input-textarea::placeholder {
     color: inherit;
     font-family: 'Super Mario';
     font-size: .8rem;
@@ -657,7 +618,7 @@ body {
     opacity: .5;
 }
 
-.order__texts-left-btn {
+.order__texts-right-btn {
     width: 80px;
     background-color: var(--blue-color);
     border: 2px solid var(--white-color);
@@ -669,9 +630,31 @@ body {
     cursor: pointer;
     transition: all .2s;
 }
-.order__texts-left-btn:hover {
+.order__texts-right-btn:hover {
     color: var(--orange-color);
     border-color: var(--orange-color);
+}
+
+.order__err-modal,
+.order__success-modal {
+    position: fixed;
+    top: 0;
+    left: -65%;
+    background-color: #FE0000;
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    margin: 2rem;
+    font-size: 1rem;
+    z-index: 25;
+    transition: left .5s;
+}
+.order__err-modal--shown,
+.order__success-modal--shown {
+    left: 0;
+}
+
+.order__success-modal {
+    background-color: #03C988;
 }
 
 .order__bottom-left-images img:nth-child(3),

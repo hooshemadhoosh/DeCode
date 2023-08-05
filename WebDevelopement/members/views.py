@@ -16,7 +16,7 @@ def Home(request):
         print(request.FILES)
         subject = "DeCode teem presents"
         body = render_to_string('order.html').strip()
-        recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"]
+        recipients = ["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com","imn.s901386@gmail.com"]
         reply_to = ['noreply@test.com']
         msg = EmailMultiAlternatives(subject, body,  settings.EMAIL_HOST_USER, recipients,)
         msg.mixed_subtype = 'related'

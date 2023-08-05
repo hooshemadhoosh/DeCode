@@ -261,52 +261,41 @@
                     </h2>
                     <form class="order__texts" action="" method="post">
                         {% csrf_token %}
-                        <div class="order__texts-right">
-                            <div class="order__texts-right-specifictions">
-                                <div class="order__texts-right-name">
-                                    <p class="order__texts-right-name-title">business name:</p>
-                                    <input class="order__texts-right-name-input" type="text" name="bname" placeholder="the name of the site">
+                        <div class="order__texts-left">
+                            <div class="order__texts-left-specifictions1">
+                                <div class="order__texts-left-name">
+                                    <p class="order__texts-left-name-title">business name:</p>
+                                    <input class="order__texts-left-name-input" type="text" name="site-name" placeholder="the name of the site">
                                 </div>
-                                <div class="order__texts-right-file">
-                                    <p class="order__texts-right-file-title">attach a file</p>
+                                <div class="order__texts-left-file">
+                                    <p class="order__texts-left-file-title">attach a file</p>
                                     <label for="file-input">
-                                        <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-right-file-input-label" alt="pin image">
+                                        <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-left-file-input-label" alt="pin image">
                                     </label>
-                                    <input type="file" id="file-input" class="order__texts-right-file-input" name="attach"> 
+                                    <input type="file" id="file-input" class="order__texts-left-file-input" name="site-file"> 
                                 </div>
                             </div>
-                            <div class="order__texts-right-subjects">
-                                <button type="button" class="order__texts-dropdown-btn">
-                                    what is your site about?
-                                    <img src="{%static '/images/genreal/arrow.png' %}" class="order__texts-dropdown-btn-img" alt="arrow">
-                                </button>
-                                <ul class="order__texts-dropdown">
-                                    <li>Fashion</li>
-                                    <li>Art</li>
-                                    <li>Personal brand</li>
-                                    <li>Music</li>
-                                    <li>Nature</li>
-                                    <li>Educrtion</li>
-                                    <li>bahaman</li>
-                                    <li>folan bahman</li>
-                                    <li>folan</li>
-                                    <li>bisar</li>
-                                    <li>folan bahman</li>
-                                    <li>bisar</li>
-                                    <li>folan bisar</li>
-                                    <li>fola</li>
-                                    <li>folan</li>
-                                    <li>folan bah</li>
-                                    <li>bisar</li>
-                                </ul>
+                            <div class="order__texts-left-specifictions2">
+                                <div class="order__texts-left-subjects">
+                                    <label for="site-subject" class="order__texts-subject-lable">
+                                        what is your site about?
+                                    </label>
+                                    <input type="text" name="site-subject" class="order__texts-subject-input" placeholder="example: shopping">
+                                </div>
+                                <div class="order__texts-left-subjects">
+                                    <label for="site-subject" class="order__texts-subject-lable">
+                                        your email to communicate with you
+                                    </label>
+                                    <input type="text" name="customer-email" class="order__texts-subject-input" id="orderEmail" placeholder="example@gmail.com">
+                                </div>
                             </div>
                         </div>
-                        <div class="order__texts-left">
-                            <div class="order__texts-left-input">
-                                <p class="order__texts-left-title">brief:</p>
-                                <textarea class="order__texts-left-input-textarea" cols="30" rows="6" placeholder="about your business"></textarea>
+                        <div class="order__texts-right">
+                            <div class="order__texts-right-input">
+                                <p class="order__texts-right-title">brief:</p>
+                                <textarea class="order__texts-right-input-textarea" name="site-brief" cols="30" rows="6" placeholder="about your business"></textarea>
                             </div>
-                            <button type="submit" class="order__texts-left-btn">Confrim</button>
+                            <button type="submit" class="order__texts-right-btn">Confrim</button>
                         </div>
                     </form>
                 </div>
@@ -353,7 +342,7 @@
                     <a href="#" class="footer__social-media-link">
                         <img src="{%static '/images/genreal/telegram-icon.png' %}" alt="telegram png">
                     </a>
-                    <a href="#" class="footer__social-media-link">
+                    <a href="mailto:decode.callinfo@gmail.com" class="footer__social-media-link">
                         <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
                     </a>
                     <a href="#" class="footer__social-media-link">
@@ -399,6 +388,13 @@
             <div class="footer__black-overlay"></div>
         </div>
     </footer>
+
+    <div class="order__err-modal">
+        <p>Email not valid !!</p>
+    </div>
+    <div class="order__success-modal">
+        <p>Sent successfully !!</p>
+    </div>
     
     <div class="black-overlay"></div>
 
