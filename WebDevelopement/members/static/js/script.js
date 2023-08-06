@@ -23,41 +23,41 @@ blackOverlay.addEventListener('click' , () => {
 })
 
 // ----------> Email Validation
-let emialValidated = false
-const orderEmail = document.getElementById('orderEmail')
-const formElem = document.querySelector('.order__texts')
+const formElem = document.getElementById('formOrder')
 const orderErrModal = document.querySelector('.order__err-modal')
 const orderSuccessModal = document.querySelector('.order__success-modal')
+const fileInput = document.getElementById('fileInput')
+const nameInput = document.getElementById('nameInput')
+const subjectInput = document.getElementById('subjectInput')
+const emailInput = document.getElementById('emailInput')
+const briefInput = document.getElementById('briefInput')
 
-orderEmail.addEventListener('keyup' , () => {
-    let emialValue = orderEmail.value
+let emialValidated = false
+emailInput.addEventListener('keyup' , () => {
+    let emialValue = emailInput.value
 
     if(!emialValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        orderEmail.classList.add('order__texts-subject-input-err')
+        emailInput.classList.add('order__texts-subject-input-err')
     } else {
-        orderEmail.classList.remove('order__texts-subject-input-err')
+        emailInput.classList.remove('order__texts-subject-input-err')
         emialValidated = true
     }
     if (emialValue == '') {
-        orderEmail.classList.remove('order__texts-subject-input-err')
+        emailInput.classList.remove('order__texts-subject-input-err')
     }
 })
 
 formElem.addEventListener('submit' , (e) => {
-    if(!emialValidated) {
+    if(emialValidated && nameInput.value && subjectInput.value && emailInput.value && briefInput.value) {
+        orderSuccessModal.classList.add('order__success-modal--shown')
+    } else {
         e.preventDefault()
         orderErrModal.classList.add('order__err-modal--shown')
         setTimeout(() => {
             orderErrModal.classList.remove('order__err-modal--shown')
         }, 3000);
-    } else {
-        orderSuccessModal.classList.add('order__success-modal--shown')
-        setTimeout(() => {
-            orderSuccessModal.classList.remove('order__success-modal--shown')
-        }, 3000);
     }
 })
-
 
 // ----------> Super Mario Animations
 let superMarioImage = document.querySelector('.super-mario-image')

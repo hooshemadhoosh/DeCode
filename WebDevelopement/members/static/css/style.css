@@ -77,6 +77,10 @@ body {
     padding: 1rem 2rem;
 } 
 
+.menu__logo-mobile {
+    width: 120px;
+}
+
 .menu-mobile__btn--show,
 .menu-mobile__btn--close {
     display: flex;
@@ -139,6 +143,15 @@ body {
     height: 9rem;
     border: solid 4.5px var(--white-color);
     background-color: var(--blue-color);
+}
+
+.menu__left {
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo-desktop {
+    width: 150px;
 }
 
 .menu__right {
@@ -639,7 +652,7 @@ body {
 .order__success-modal {
     position: fixed;
     top: 0;
-    left: -65%;
+    left: -80%;
     background-color: #FE0000;
     color: var(--white-color);
     padding: 1rem 2rem;

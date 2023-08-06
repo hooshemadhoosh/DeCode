@@ -751,6 +751,11 @@
         width: 60px;
     }
 
+    /* Menu */
+    .menu__logo-desktop {
+        width: 190px;
+    }
+
     /* Header & Templates */
     .header__content,
     .templates__content,
