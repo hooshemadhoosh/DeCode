@@ -22,30 +22,42 @@ blackOverlay.addEventListener('click' , () => {
     closeMenu()
 })
 
-// ----------> Show drop down & Show activated li
-const orderDropdown = document.querySelector('.order__texts-dropdown')
-const orderDropdownBtn = document.querySelector('.order__texts-dropdown-btn')
-const orderDropdownChilds = orderDropdown.children
+// ----------> Email Validation
+const formElem = document.getElementById('formOrder')
+const orderErrModal = document.querySelector('.order__err-modal')
+const orderSuccessModal = document.querySelector('.order__success-modal')
+const fileInput = document.getElementById('fileInput')
+const nameInput = document.getElementById('nameInput')
+const subjectInput = document.getElementById('subjectInput')
+const emailInput = document.getElementById('emailInput')
+const briefInput = document.getElementById('briefInput')
 
-orderDropdownBtn.addEventListener('click' , () => {
-    if(orderDropdown.classList.contains('order__texts-dropdown--shown')) {
-        orderDropdown.classList.remove('order__texts-dropdown--shown')
+let emialValidated = false
+emailInput.addEventListener('keyup' , () => {
+    let emialValue = emailInput.value
+
+    if(!emialValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        emailInput.classList.add('order__texts-subject-input-err')
     } else {
-        orderDropdown.classList.add('order__texts-dropdown--shown')
+        emailInput.classList.remove('order__texts-subject-input-err')
+        emialValidated = true
+    }
+    if (emialValue == '') {
+        emailInput.classList.remove('order__texts-subject-input-err')
     }
 })
 
-for(let orderDropdownChild of orderDropdownChilds) {
-    orderDropdownChild.addEventListener('click' , () => {
-        for(let orderDropdownChild of orderDropdownChilds) {
-            if(orderDropdownChild.classList.contains('order__texts-dropdown-li-activated')) {
-                orderDropdownChild.classList.remove('order__texts-dropdown-li-activated')
-            }
-        }
-        orderDropdownChild.classList.add('order__texts-dropdown-li-activated')
-    })
-}
-
+formElem.addEventListener('submit' , (e) => {
+    if(emialValidated && nameInput.value && subjectInput.value && emailInput.value && briefInput.value) {
+        orderSuccessModal.classList.add('order__success-modal--shown')
+    } else {
+        e.preventDefault()
+        orderErrModal.classList.add('order__err-modal--shown')
+        setTimeout(() => {
+            orderErrModal.classList.remove('order__err-modal--shown')
+        }, 3000);
+    }
+})
 
 // ----------> Super Mario Animations
 let superMarioImage = document.querySelector('.super-mario-image')
