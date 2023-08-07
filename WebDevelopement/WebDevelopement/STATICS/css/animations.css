@@ -1,16 +1,16 @@
 @keyframes walking {
-    0% {background-image: url(/images/genreal/SuperMario--Stop.png);}
-    20% {background-image: url(/images/genreal/SuperMario--Walking-1.png);}
-    40% {background-image: url(/images/genreal/SuperMario--Walking-2.png);}
-    60% {background-image: url(/images/genreal/SuperMario--Walking-1.png);}
-    80% {background-image: url(/images/genreal/SuperMario--Walking-2.png);}
-    100% {background-image: url(/images/genreal/SuperMario--Stop.png);}
+    0% {background-image: url("../images/genreal/SuperMario--Stop.png");}
+    20% {background-image: url("../images/genreal/SuperMario--Walking-1.png");}
+    40% {background-image: url("../images/genreal/SuperMario--Walking-2.png");}
+    60% {background-image: url("../images/genreal/SuperMario--Walking-1.png");}
+    80% {background-image: url("../images/genreal/SuperMario--Walking-2.png");}
+    100% {background-image: url("../images/genreal/SuperMario--Stop.png");}
 }
 
 @keyframes jumping {
-    0% {background-image: url(/images/genreal/SuperMario--Stop.png); top: -100px;}
-    80% {background-image: url(/images/genreal/SuperMario--Jumping.png); top: calc(100vh - 100px);}
-    100% {background-image: url(/images/genreal/SuperMario--Stop.png); top: calc(100vh - 100px);}
+    0% {background-image: url("../images/genreal/SuperMario--Stop.png"); top: -100px;}
+    80% {background-image: url("../images/genreal/SuperMario--Jumping.png"); top: calc(100vh - 100px);}
+    100% {background-image: url("../images/genreal/SuperMario--Stop.png"); top: calc(100vh - 100px);}
 }
 
 .super-mario--animation-walking {

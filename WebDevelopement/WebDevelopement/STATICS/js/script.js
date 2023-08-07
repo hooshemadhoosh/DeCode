@@ -73,17 +73,17 @@ const templatesRightElem = document.querySelector('.templates__bottom-right-imag
 window.addEventListener('scroll' , () => {
 
     // Execute promise
-    // let documentScroll = window.scrollY
-    // let heightShouldGo = headerElem.clientHeight
-    // if(documentScroll < heightShouldGo) {
-    //     walking(heightShouldGo, headerLeftElem, templatesRightElem, superMarioImage, '+')
-    //     .then( (res) => {
-    //         heightShouldGo += templatesElem.clientHeight
-    //         walking(heightShouldGo, templatesRightElem, undefined, res, '-')
-    //     })
-    // } else {
+    let documentScroll = window.scrollY
+    let heightShouldGo = headerElem.clientHeight
+    if(documentScroll < heightShouldGo) {
+        walking(heightShouldGo, headerLeftElem, templatesRightElem, superMarioImage, '+')
+        // .then( (res) => {
+        //     heightShouldGo += templatesElem.clientHeight
+        //     walking(heightShouldGo, templatesRightElem, undefined, res, '-')
+        // })
+    } else {
 
-    // }
+    }
 
 })
 
