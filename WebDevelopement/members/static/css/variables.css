@@ -3,4 +3,35 @@
     --blue-color: #5C94FC;
     --orange-color: #FC9838;
     --white-color: #fff;
+    --supermario-height: 43.2px;
+}
+
+@media only screen and (min-width: 480px) {
+    :root {
+        --supermario-height: 64.8px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --supermario-height: 75.6px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --supermario-height: 97.2px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    :root {
+        --supermario-height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    :root {
+        --supermario-height: 106px;
+    }
 }

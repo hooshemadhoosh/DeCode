@@ -1,22 +1,45 @@
+@import "variables.css";
+
 @keyframes walking {
-    0% {background-image: url("../images/genreal/SuperMario--Stop.png");}
-    20% {background-image: url("../images/genreal/SuperMario--Walking-1.png");}
-    40% {background-image: url("../images/genreal/SuperMario--Walking-2.png");}
-    60% {background-image: url("../images/genreal/SuperMario--Walking-1.png");}
-    80% {background-image: url("../images/genreal/SuperMario--Walking-2.png");}
-    100% {background-image: url("../images/genreal/SuperMario--Stop.png");}
+    from {left: 0;}
+    to {left: 100%}
+}
+
+@keyframes walking2 {
+    from {right: 0;}
+    to {right: 100%}
+}
+
+@keyframes changeFrame {
+    from {background-image: url("../images/genreal/SuperMario--Walking-1.png");}
+    to {background-image: url("../images/genreal/SuperMario--Walking-2.png");}
+}
+
+@keyframes changeFrame2 {
+    from {background-image: url("../images/genreal/SuperMario--Walking-1-reverse.png");}
+    to {background-image: url("../images/genreal/SuperMario--Walking-2-reverse.png");}
 }
 
 @keyframes jumping {
-    0% {background-image: url("../images/genreal/SuperMario--Stop.png"); top: -100px;}
-    80% {background-image: url("../images/genreal/SuperMario--Jumping.png"); top: calc(100vh - 100px);}
-    100% {background-image: url("../images/genreal/SuperMario--Stop.png"); top: calc(100vh - 100px);}
+    0% {background-image: url("../images/genreal/SuperMario--Stop.png");}
+    80% {background-image: url("../images/genreal/SuperMario--Jumping.png"); top: calc(100vh - var(--supermario-height));}
+    100% {background-image: url("../images/genreal/SuperMario--Stop-reverse.png"); top: calc(100vh - var(--supermario-height));}
+}
+
+@keyframes jumping2 {
+    0% {background-image: url("../images/genreal/SuperMario--Stop-reverse.png");}
+    80% {background-image: url("../images/genreal/SuperMario--Jumping-reverse.png"); top: calc(100vh - var(--supermario-height));}
+    100% {background-image: url("../images/genreal/SuperMario--Stop.png"); top: calc(100vh - var(--supermario-height));}
 }
 
 .super-mario--animation-walking {
-    animation: walking .8s;
+    animation: walking 5s 1s forwards, changeFrame .4s 1s 12.5, jumping 1.5s 5s forwards;
 }
 
-.super-mario--animation-jumping {
-    animation: jumping 1.5s forwards ease-in;
+.super-mario--animation-walking2 {
+    animation: walking2 5s forwards, changeFrame2 .4s 12.5, jumping2 1.5s 5s forwards;
+}
+
+.super-mario--animation-walking3 {
+    animation: walking 5s forwards, changeFrame .4s 12.5;
 }

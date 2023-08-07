@@ -36,7 +36,6 @@
     /* Main */
     .super-mario-image {
         width: 60px;
-        height: 64.8px;
         top: -64.8px;
     }
 
@@ -260,11 +259,7 @@
         display: block;
     }
 
-    /* Order */
-    .order__bottom-left-images img:nth-child(3) {
-        display: block;
-    }
-    
+    /* Order */   
     .order__flag-image {
         width: 52.5px;
         height: 367.5px;
@@ -282,7 +277,6 @@
 
     .super-mario-image {
         width: 70px;
-        height: 75.6px;
         top: -75.6px;
     }
         
@@ -459,10 +453,6 @@
     .order__success-modal {
         font-size: 1.4rem;
     }
-
-    .order__bottom-left-images img:nth-child(4) {
-        display: block;
-    }
     
     .order__flag-image {
         width: 60px;
@@ -501,12 +491,6 @@
     .whoarewe__bottom-right-images img:nth-child(6) {
         display: block;
     }
-
-    /* Order */
-    .order__bottom-left-images img:nth-child(5),
-    .order__bottom-left-images img:nth-child(6) {
-        display: block;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -514,13 +498,7 @@
     /* Main */
     .super-mario-image {
         width: 90px;
-        height: 97.2px;
         top: -97.2px;
-        left: 30%;
-    }
-    .super-mario-image-reverse {
-        left: auto;
-        right: 30%;
     }
         
     .blocks-image {
@@ -738,10 +716,6 @@
 @media only screen and (min-width: 1280px) {
 
     /* Main */
-    .super-mario-image {
-        left: 50%;
-    }
-
     .blocks-image {
         width: 60px;
         height: 120px;
@@ -832,11 +806,6 @@
         font-size: 1.8rem;
     }
 
-    .order__bottom-left-images img:nth-child(7),
-    .order__bottom-left-images img:nth-child(8) {
-        display: block;
-    }
-
     .order__flag-image {
         width: 90px;
         height: 630px;
@@ -849,7 +818,6 @@
     /* Main */
     .super-mario-image {
         width: 94px;
-        height: 100px;
         top: -100px;
     }
     
@@ -944,10 +912,6 @@
         padding: 1rem 0;
     }
 
-    .order__bottom-left-images img:nth-child(9) {
-        display: block;
-    }
-
     .order__flag-image {
         width: 97.5px;
         height: 682.5px;
@@ -960,7 +924,6 @@
     /* Main */
     .super-mario-image {
         width: 100px;
-        height: 106px;
         top: -106px;
     }
     

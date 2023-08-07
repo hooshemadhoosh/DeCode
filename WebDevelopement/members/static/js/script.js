@@ -59,115 +59,34 @@ formElem.addEventListener('submit' , (e) => {
     }
 })
 
-// ----------> Super Mario Animations
+// Super mario animations
 let superMarioImage = document.querySelector('.super-mario-image')
+const templatesRightImages = document.querySelector('.templates__bottom-right-images')
+const whoareweRightImages = document.querySelector('.whoarewe__bottom-right-images')
+const orderBottomImages = document.querySelector('.order__bottom-images')
 
-// Header Elements
-const headerElem = document.querySelector('.header')
-const headerLeftElem = document.querySelector('.header__bottom-left-images')
+setTimeout(() => {
+    superMarioImage.remove()
+    templatesRightImages.insertAdjacentHTML('afterbegin' , `
+        <div class="super-mario-image super-mario-image-reverse super-mario--animation-walking2"></div>
+    `)
+    superMarioImage = document.querySelector('.super-mario-image')
+}, 6500);
 
-// Templates Elements
-const templatesElem = document.querySelector('.templates')
-const templatesRightElem = document.querySelector('.templates__bottom-right-images')
+setTimeout(() => {
+    superMarioImage.remove()
+    whoareweRightImages.insertAdjacentHTML('afterbegin' , `
+        <div class="super-mario-image super-mario-image-reverse super-mario--animation-walking2"></div>
+    `)
+    superMarioImage = document.querySelector('.super-mario-image')
+}, 13000);
 
-window.addEventListener('scroll' , () => {
-
-    // Execute promise
-    let documentScroll = window.scrollY
-    let heightShouldGo = headerElem.clientHeight
-    if(documentScroll < heightShouldGo) {
-        walking(heightShouldGo, headerLeftElem, templatesRightElem, superMarioImage, '+')
-        // .then( (res) => {
-        //     heightShouldGo += templatesElem.clientHeight
-        //     walking(heightShouldGo, templatesRightElem, undefined, res, '-')
-        // })
-    } else {
-
-    }
-
-})
-
-function getStyle(el, styleProp) {
-    var value, defaultView = (el.ownerDocument || document).defaultView;
-    // W3C standard way:
-    if (defaultView && defaultView.getComputedStyle) {
-        // sanitize property name to css notation
-        // (hypen separated words eg. font-Size)
-        styleProp = styleProp.replace(/([A-Z])/g, "-$1").toLowerCase();
-        return defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
-    } else if (el.currentStyle) { // IE
-        // sanitize property name to camelCase
-        styleProp = styleProp.replace(/\-(\w)/g, function(str, letter) {
-            return letter.toUpperCase();
-        });
-        value = el.currentStyle[styleProp];
-        // convert other units to pixels on IE
-        if (/^\d+(em|pt|%|ex)?$/i.test(value)) { 
-            return (function(value) {
-              var oldLeft = el.style.left, oldRsLeft = el.runtimeStyle.left;
-              el.runtimeStyle.left = el.currentStyle.left;
-              el.style.left = value || 0;
-              value = el.style.pixelLeft + "px";
-              el.style.left = oldLeft;
-              el.runtimeStyle.left = oldRsLeft;
-              return value;
-            })(value);
-        }
-        return value;
-    }
-}
-
-function walking(heightShouldGo, elemWalkingOn, elemJumpingOn, superMario, direction) {
-
-    // Using promises to see when super mario should jump
-    return new Promise(resolve => {
-        let documentScroll = window.scrollY
-
-        let superMarioPosition = Number(getStyle(superMario, 'left').slice(0, -2))
-
-        heightShouldGo -=  elemWalkingOn.clientHeight
-
-        let widthShouldGo = null
-
-        if(superMarioPosition) {
-            widthShouldGo = elemWalkingOn.clientWidth - superMarioPosition
-        } else {
-            widthShouldGo = elemWalkingOn.clientWidth
-        }
-
-        console.log(heightShouldGo, documentScroll);
-    
-        let widthHeightRatio = widthShouldGo / heightShouldGo
-    
-        let widthGone = widthHeightRatio * documentScroll
-    
-        if (documentScroll < heightShouldGo) {
-            superMario.style.transform = `translateX(${direction}${widthGone}px)`;
-            new Promise((resolve) => {
-                superMario.classList.add('super-mario--animation-walking')
-                resolve()
-            })
-            .then(() => {
-                setTimeout(() => {
-                    superMario.classList.remove('super-mario--animation-walking')
-                }, 1000);
-            })
-        } else {
-            new Promise((resolve) => {
-                superMario.classList.add('super-mario--animation-jumping')
-                resolve()
-            })
-            .then(() => {
-                setTimeout(() => {
-                    superMario.remove()
-                    elemJumpingOn.insertAdjacentHTML('afterbegin' , `<div class="super-mario-image super-mario-image-reverse"></div>`)
-                    superMario = document.querySelector('.super-mario-image')
-                    resolve(superMario)
-                }, 1500);
-            })
-        }
-    })
-}
+setTimeout(() => {
+    superMarioImage.remove()
+    orderBottomImages.insertAdjacentHTML('afterbegin' , `
+        <div class="super-mario-image super-mario--animation-walking3"></div>
+    `)
+}, 19500);
 
 // Swiper Initialization
 const swiper = new Swiper('.swiper', {

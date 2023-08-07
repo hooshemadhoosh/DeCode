@@ -36,16 +36,16 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     width: 40px;
-    height: 43.2px;
+    height: var(--supermario-height);
     position: absolute;
     top: -43.2px;
     left: 0;
     z-index: 10;
 }
 .super-mario-image-reverse {
-    transform: scaleX(-1);
-    left: auto;
+    background-image: url("../images/genreal/SuperMario--Stop-reverse.png");
     right: 0;
+    left: auto;
 }
 
 .blocks-image {
@@ -670,14 +670,8 @@ body {
     background-color: #03C988;
 }
 
-.order__bottom-left-images img:nth-child(3),
-.order__bottom-left-images img:nth-child(4), 
-.order__bottom-left-images img:nth-child(5), 
-.order__bottom-left-images img:nth-child(6), 
-.order__bottom-left-images img:nth-child(7),
-.order__bottom-left-images img:nth-child(8),
-.order__bottom-left-images img:nth-child(9) {
-    display: none;
+.order__bottom-images {
+    position: relative;
 }
 
 .order__cloud1-image {
