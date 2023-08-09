@@ -13,9 +13,9 @@ def HelloWorldPage(request):
     return render(request,'order.html')
 def Home(request):
     if request.method == 'POST':
-        print(request.FILES)
+
         subject = "DeCode teem presents"
-        body = render_to_string('order.html').strip()
+        body = render_to_string('order.html',context={'bname':request.POST.get('bname'),'subject':request.POST.get('bsubject'),'email':request.POST.get('email'),'brief':request.POST.get('brief')}).strip()
         recipients = ["decode.callinfo@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com","imn.s901386@gmail.com"]
         reply_to = ['noreply@test.com']
         msg = EmailMultiAlternatives(subject, body,  settings.EMAIL_HOST_USER, recipients,)
@@ -29,6 +29,7 @@ def Home(request):
             img.add_header('Content-Disposition', 'inline', filename="logo")
         msg.attach(img)        
         msg.send()
+        return HttpResponse('1')
         #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
     return render(request,'index.html')
 
