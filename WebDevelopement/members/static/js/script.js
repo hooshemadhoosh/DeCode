@@ -69,11 +69,9 @@ formElem.addEventListener('submit' , (e) => {
     e.preventDefault()
 
     if(emialValidated && nameInput.value && subjectInput.value && emailInput.value && briefInput.value) {
-        console.log(emialValidated);
-
         let fd = new FormData()
         fd.append('csrfmiddlewaretoken', csrf[0].value)
-        fd.append('image', imgData)
+        fd.append('image', URL.createObjectURL(imgData))
         fd.append('bname', nameInput.value)
         fd.append('bsubject', subjectInput.value)
         fd.append('email', emailInput.value)
