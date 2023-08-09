@@ -8,20 +8,30 @@ from email.mime.image import MIMEImage
 from django.core.mail import EmailMultiAlternatives, EmailMessage
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+import os
+
 
 def HelloWorldPage(request):
     return render(request,'order.html')
 def Home(request):
     if request.method == 'POST':
-
-        subject = "DeCode teem presents"
+        # print(request.FILES)
+        # print(request.POST)
+        subject = "NEW PROJECT"
         body = render_to_string('order.html',context={'bname':request.POST.get('bname'),'subject':request.POST.get('bsubject'),'email':request.POST.get('email'),'brief':request.POST.get('brief')}).strip()
+        file = request.FILES.get('image')
         recipients = ["decode.callinfo@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com","imn.s901386@gmail.com"]
         reply_to = ['noreply@test.com']
         msg = EmailMultiAlternatives(subject, body,  settings.EMAIL_HOST_USER, recipients,)
         msg.mixed_subtype = 'related'
         msg.content_subtype = 'html'
-        msg.attach_file('db.sqlite3')
+        file_dir = "uploads\\" + file.name
+        with open(file_dir,'ab') as f:
+            for i in file.chunks():
+                f.write(i)
+        msg.attach_file(file_dir)
+        if os.path.exists(file_dir):
+            os.remove(file_dir)
         file_path = "members\static\images\logo\decode logo.png"
         with open(file_path, 'rb') as f:
             img = MIMEImage(f.read())
