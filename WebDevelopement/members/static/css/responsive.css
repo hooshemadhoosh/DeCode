@@ -181,6 +181,10 @@
     .order__texts-subject-lable {
         font-size: 1.3rem;
     }
+
+    .order__texts-left-file-subtitle {
+        font-size: .8rem;
+    }
     
     .order__texts-right-input-textarea {
         font-size: 1.4rem;
@@ -195,8 +199,8 @@
         padding: .8rem 0;
     }
 
-    .order__err-modal,
-    .order__success-modal {
+    .order__uncomplete-modal,
+    .order__sending-modal {
         font-size: 1.2rem;
     }
 
@@ -415,6 +419,10 @@
     .order__texts-subject-lable {
         font-size: 1.5rem;
     }
+
+    .order__texts-left-file-subtitle {
+        font-size: 1rem;
+    }
     
     .order__texts-left-name-input,
     .order__texts-subject-input {
@@ -449,8 +457,8 @@
         font-size: 1.2rem;
     }
 
-    .order__err-modal,
-    .order__success-modal {
+    .order__uncomplete-modal,
+    .order__sending-modal {
         font-size: 1.4rem;
     }
     
@@ -653,6 +661,10 @@
         font-size: 1.7rem;
     }
 
+    .order__texts-left-file-subtitle {
+        font-size: 1.2rem;
+    }
+
     .order__texts-left-name-title {
         text-align: start;
     }
@@ -801,8 +813,8 @@
     }
 
     /* Order */
-    .order__err-modal,
-    .order__success-modal {
+    .order__uncomplete-modal,
+    .order__sending-modal {
         font-size: 1.8rem;
     }
 
@@ -880,6 +892,10 @@
     .order__texts-right-title,
     .order__texts-subject-lable {
         font-size: 2rem;
+    }
+
+    .order__texts-left-file-subtitle {
+        font-size: 1.3rem;
     }
     
     .order__texts-left-name-input,

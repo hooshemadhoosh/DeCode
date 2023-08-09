@@ -268,11 +268,14 @@
                                     <input class="order__texts-left-name-input" id="nameInput" type="text" name="site-name" placeholder="the name of the site">
                                 </div>
                                 <div class="order__texts-left-file">
-                                    <p class="order__texts-left-file-title">attach a file</p>
+                                    <div>
+                                        <p class="order__texts-left-file-title">attach a file</p>
+                                        <p class="order__texts-left-file-subtitle" id="fileName"></p>
+                                    </div>
                                     <label for="fileInput">
                                         <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-left-file-input-label" alt="pin image">
                                     </label>
-                                    <input type="file" id="fileInput" class="order__texts-left-file-input" name="site-file"> 
+                                    <input type="file" id="fileInput" class="order__texts-left-file-input" accept="image/png, image/jpeg" name="site-file"> 
                                 </div>
                             </div>
                             <div class="order__texts-left-specifictions2">
@@ -393,11 +396,14 @@
         </div>
     </footer>
 
-    <div class="order__err-modal">
-        <p>Fill all the fields !!</p>
+    <div class="order__uncomplete-modal">
+        <p>Fill all the fields correctly !!</p>
     </div>
-    <div class="order__success-modal">
+    <div class="order__sending-modal">
         <p>Sending...</p>
+    </div>
+    <div class="order__servermessage-modal">
+        <p></p>
     </div>
     
     <div class="black-overlay"></div>

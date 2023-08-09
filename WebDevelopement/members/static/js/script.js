@@ -1,3 +1,9 @@
+// Loader
+window.addEventListener('load' , () => {
+    console.log('Loaded...');
+})
+
+
 // ----------> Show Mobile Menu
 const showMenuBtn = document.querySelector('.menu-mobile__btn--show')
 const closeMenuBtn = document.querySelector('.menu-mobile__btn--close')
@@ -24,23 +30,35 @@ blackOverlay.addEventListener('click' , () => {
 
 // ----------> Email Validation
 const formElem = document.getElementById('formOrder')
-const orderErrModal = document.querySelector('.order__err-modal')
-const orderSuccessModal = document.querySelector('.order__success-modal')
+const orderUncompleteModal = document.querySelector('.order__uncomplete-modal')
+const orderSendingModal = document.querySelector('.order__sending-modal')
 const fileInput = document.getElementById('fileInput')
+const fileName = document.getElementById('fileName')
 const nameInput = document.getElementById('nameInput')
 const subjectInput = document.getElementById('subjectInput')
 const emailInput = document.getElementById('emailInput')
 const briefInput = document.getElementById('briefInput')
 
+
+const csrf = document.getElementsByName('csrfmiddlewaretoken')
+let imgData = null
+
+fileInput.addEventListener('change' , () => {
+    imgData = fileInput.files[0]
+    fileName.innerHTML = imgData.name
+    fileInput.previousElementSibling.classList.add('order__texts-left-file-input-label--attached')
+})
+
 let emialValidated = false
-emailInput.addEventListener('keyup' , () => {
+emailInput.addEventListener('keyup' , (e) => {
     let emialValue = emailInput.value
 
-    if(!emialValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
-        emailInput.classList.add('order__texts-subject-input-err')
-    } else {
+    if(emialValue.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
         emailInput.classList.remove('order__texts-subject-input-err')
         emialValidated = true
+    } else {
+        emialValidated = false
+        emailInput.classList.add('order__texts-subject-input-err')
     }
     if (emialValue == '') {
         emailInput.classList.remove('order__texts-subject-input-err')
@@ -48,13 +66,34 @@ emailInput.addEventListener('keyup' , () => {
 })
 
 formElem.addEventListener('submit' , (e) => {
+    e.preventDefault()
+
     if(emialValidated && nameInput.value && subjectInput.value && emailInput.value && briefInput.value) {
-        orderSuccessModal.classList.add('order__success-modal--shown')
+        console.log(emialValidated);
+
+        let fd = new FormData()
+        fd.append('csrfmiddlewaretoken', csrf[0].value)
+        fd.append('image', imgData)
+        fd.append('bname', nameInput.value)
+        fd.append('bsubject', subjectInput.value)
+        fd.append('email', emailInput.value)
+        fd.append('brief', briefInput.value)
+
+        orderSendingModal.classList.add('order__sending-modal--shown')
+
+        fetch(formElem.action , {
+            method: 'POST',
+            body: fd
+        })
+        .then(res => {
+            console.log(res)
+            orderSendingModal.classList.remove('order__sending-modal--shown')
+        })
+        .catch(err => console.log(err))
     } else {
-        e.preventDefault()
-        orderErrModal.classList.add('order__err-modal--shown')
+        orderUncompleteModal.classList.add('order__uncomplete-modal--shown')
         setTimeout(() => {
-            orderErrModal.classList.remove('order__err-modal--shown')
+            orderUncompleteModal.classList.remove('order__uncomplete-modal--shown')
         }, 3000);
     }
 })
