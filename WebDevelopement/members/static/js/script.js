@@ -1,9 +1,3 @@
-// Loader
-window.addEventListener('load' , () => {
-    console.log('Loaded...');
-})
-
-
 // ----------> Show Mobile Menu
 const showMenuBtn = document.querySelector('.menu-mobile__btn--show')
 const closeMenuBtn = document.querySelector('.menu-mobile__btn--close')
@@ -32,6 +26,7 @@ blackOverlay.addEventListener('click' , () => {
 const formElem = document.getElementById('formOrder')
 const orderUncompleteModal = document.querySelector('.order__uncomplete-modal')
 const orderSendingModal = document.querySelector('.order__sending-modal')
+const orderServerModal = document.querySelector('.order__servermessage-modal')
 const fileInput = document.getElementById('fileInput')
 const fileName = document.getElementById('fileName')
 const nameInput = document.getElementById('nameInput')
@@ -71,7 +66,7 @@ formElem.addEventListener('submit' , (e) => {
     if(emialValidated && nameInput.value && subjectInput.value && emailInput.value && briefInput.value) {
         let fd = new FormData()
         fd.append('csrfmiddlewaretoken', csrf[0].value)
-        fd.append('image', URL.createObjectURL(imgData))
+        fd.append('image', imgData)
         fd.append('bname', nameInput.value)
         fd.append('bsubject', subjectInput.value)
         fd.append('email', emailInput.value)
@@ -84,8 +79,20 @@ formElem.addEventListener('submit' , (e) => {
             body: fd
         })
         .then(res => {
-            console.log(res)
             orderSendingModal.classList.remove('order__sending-modal--shown')
+            if(res.status == 200) {
+                orderServerModal.innerHTML = 'Message Successfully Sent!'
+                orderServerModal.classList.add('order__servermessage-modal--success')
+                setTimeout(() => {
+                    orderServerModal.classList.remove('order__servermessage-modal--success')
+                }, 3000);
+            } else {
+                orderServerModal.innerHTML = 'Error While Sending Message!'
+                orderServerModal.classList.add('order__servermessage-modal--error')
+                setTimeout(() => {
+                    orderServerModal.classList.remove('order__servermessage-modal--error')
+                }, 3000);
+            }
         })
         .catch(err => console.log(err))
     } else {

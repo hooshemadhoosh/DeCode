@@ -15,7 +15,6 @@ body {
 
 .container {
     width: 100%;
-    /* height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -24,7 +23,6 @@ body {
 
 .name,
 .subject,
-.image,
 .brief {
     display: flex;
     align-items: center;
@@ -32,8 +30,7 @@ body {
     padding: .5rem;
 }
 
-.name,
-.image {
+.name {
     margin: 2rem 0;
 }
 
@@ -49,16 +46,7 @@ body {
     background-color: #F6F4EB;
 }
 
-.image {
-    padding: 0;
-}
-
 p {
     font-size: 1.4rem;
-    margin-left: 1rem;
-}
-
-img {
-    width: 500px;
     margin-left: 1rem;
 }

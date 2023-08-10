@@ -12,401 +12,429 @@
 </head>
 <body>
 
-    <menu class="menu">
-        <div class="menu-desktop">
-            <div class="menu__left">
-                <img src="{%static '/images/logo/decode logo.png' %}" class="menu__logo-desktop" alt="Logo">
+    <div class="preloader preloader--animation">
+        
+    </div>
+
+    <div class="main">
+        <menu class="menu">
+            <div class="menu-desktop">
+                <div class="menu__left">
+                    <img src="{%static '/images/logo/decode logo.png' %}" class="menu__logo-desktop" alt="Logo">
+                </div>
+                <div class="menu__right">
+                    <a href="#whoarewe" class="menu-link--hover">who are we?</a>
+                    <a href="#order" class="menu-link--hover">order!</a>
+                    <a href="#templates" class="menu-link--hover">other templates</a>
+                </div>
             </div>
-            <div class="menu__right">
-                <a href="#whoarewe" class="menu-link--hover">who are we?</a>
-                <a href="#order" class="menu-link--hover">order!</a>
-                <a href="#templates" class="menu-link--hover">other templates</a>
+            <div class="menu-mobile">
+                <button class="menu-mobile__btn--show">
+                    <img src="{%static '/images/header & menu/menu-icon.png'%}" class="menu-mobile__btn-image--show" alt="menu icon">
+                </button>
+                <img src="{%static '/images/logo/decode logo.png' %}" class="menu__logo-mobile" alt="Logo">
             </div>
-        </div>
-        <div class="menu-mobile">
-            <button class="menu-mobile__btn--show">
-                <img src="{%static '/images/header & menu/menu-icon.png'%}" class="menu-mobile__btn-image--show" alt="menu icon">
-            </button>
-            <img src="{%static '/images/logo/decode logo.png' %}" class="menu__logo-mobile" alt="Logo">
-        </div>
-        <div class="menu-mobile__side">
-            <button class="menu-mobile__btn--close">
-                <img src="{%static '/images/header & menu/close-icon.png' %}" class="menu-mobile__btn-image--close" alt="menu icon">
-            </button> 
-            <div class="menu-mobile__list"> 
-                <a href="#whoarewe" class="menu-mobile__list-item menu-link--hover">who are we?</a>
-                <a href="#order" class="menu-mobile__list-item menu-link--hover">order!</a>
-                <a href="#templates" class="menu-mobile__link menu-link--hover">other templates</a>
-            </div>              
-        </div>
-    </menu>
+            <div class="menu-mobile__side">
+                <button class="menu-mobile__btn--close">
+                    <img src="{%static '/images/header & menu/close-icon.png' %}" class="menu-mobile__btn-image--close" alt="menu icon">
+                </button> 
+                <div class="menu-mobile__list"> 
+                    <a href="#whoarewe" class="menu-mobile__list-item menu-link--hover">who are we?</a>
+                    <a href="#order" class="menu-mobile__list-item menu-link--hover">order!</a>
+                    <a href="#templates" class="menu-mobile__link menu-link--hover">other templates</a>
+                </div>              
+            </div>
+        </menu>
+        
+        <header class="header">
+            <div class="header__content">
+                <div class="container">
+                    <img src="{%static '/images/logo/decode logo.png' %}" class="header__logo" alt="Logo">
+                    <h2 class="header__description">
+                        Hi! we are a team who design and develop websites that can improve your bussiness!
+                    </h2>
+                </div>
+            </div>
+            <div class="header__images">
+                <img src="{%static '/images/genreal/Cloud-1.png' %}" class="header__cloud1-image" alt="cloud 1">
+                <img src="{%static '/images/genreal/Cloud-2.png'%}" class="header__cloud2-image" alt="cloud 2">
+                <img src="{%static '/images/header & menu/middleBoxes.png'%}" class="header__middle-boxes-image" alt="middle boxes">
+                <div class="header__bottom-images">
+                    <div class="header__bottom-left-images">
+                        <div class="super-mario-image super-mario--animation-walking"></div>
+                        <img src="{%static '/images/header & menu/grass-hill-1.png'%}" class="header__grass-hill1-image" alt="grasses">
+                        <img src="{%static '/images/genreal/grasses-1.png'%}" class="header__grasses1-image" alt="grasses">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
+                    </div>
+                    <div class="header__bottom-right-images">
+                        <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    </div>
+                </div>
+            </div>
+        </header>
     
-    <header class="header">
-        <div class="header__content">
-            <div class="container">
-                <img src="{%static '/images/logo/decode logo.png' %}" class="header__logo" alt="Logo">
-                <h2 class="header__description">
-                    Hi! we are a team who design and develop websites that can improve your bussiness!
-                </h2>
-            </div>
-        </div>
-        <div class="header__images">
-            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="header__cloud1-image" alt="cloud 1">
-            <img src="{%static '/images/genreal/Cloud-2.png'%}" class="header__cloud2-image" alt="cloud 2">
-            <img src="{%static '/images/header & menu/middleBoxes.png'%}" class="header__middle-boxes-image" alt="middle boxes">
-            <div class="header__bottom-images">
-                <div class="header__bottom-left-images">
-                    <div class="super-mario-image super-mario--animation-walking"></div>
-                    <img src="{%static '/images/header & menu/grass-hill-1.png'%}" class="header__grass-hill1-image" alt="grasses">
-                    <img src="{%static '/images/genreal/grasses-1.png'%}" class="header__grasses1-image" alt="grasses">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image header__block-images" alt="blocks">
-                </div>
-                <div class="header__bottom-right-images">
-                    <img src="{%static '/images/genreal/blocks.png'%}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="templates" id="templates">
-        <div class="templates__content">
-            <div class="container">
-                <div class="templates__texts">
-                    <h2 class="section__title templates__title">
-                        what do we mean by
-                        <span class="templates__title--text-green">OTHER TEMPLATES</span>
-                    </h2>
-                    <p class="templates__description">
-                        You are confronted with a site with many templates on a page and you can
-                        choose any one you want to see the potential of our team in web design!
-                    </p>
-                </div>
-                <div class="templates__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="templates__slider-sliding swiper-slide">
-                            <a href="#" class="templates__slider-text">Template 1</a>
-                        </div>
-                        <div class="templates__slider-sliding swiper-slide">
-                            <a href="#" class="templates__slider-text">Template 2</a>
-                        </div>
-                        <div class="templates__slider-sliding swiper-slide">
-                            <a href="#" class="templates__slider-text">Template 3</a>
-                        </div>
-                    </div>               
-                    <img src="{%static '/images/genreal/prev-btn.png' %}" class="slider-btn swiper-button-prev" alt="prev button">
-                    <img src="{%static '/images/genreal/next-btn.png' %}" class="slider-btn swiper-button-next" alt="next button">
-                    <div class="slider-scrollbar swiper-scrollbar"></div>
-                </div>
-            </div>
-        </div>
-        <div class="templates__images">
-            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="templates__cloud1-image" alt="cloud 1">
-            <div class="templates__bottom-images">
-                <div class="templates__bottom-left-images">
-                    <img src="{%static '/images/genreal/grasses-2.png'%}" class="templates__grasses2-image" alt="grasses">
-                    <img src="{%static '/images/genreal/chimney.png'%}" class="templates__chimney-image" alt="grasses">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                </div>
-                <div class="templates__bottom-right-images">
-                    <img src="{%static '/images/genreal/grass-hill-2.png' %}" class="templates__grass-hill2-image" alt="grasses">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="whoarewe" id="whoarewe">
-        <div class="whoarewe__content">
-            <div class="container">
-                <div class="whoarewe__texts">
-                    <h2 class="section__title">
-                        who are we?
-                    </h2>
-                    <div class="whoarewe__slider swiper">
+        <section class="templates" id="templates">
+            <div class="templates__content">
+                <div class="container">
+                    <div class="templates__texts">
+                        <h2 class="section__title templates__title">
+                            what do we mean by
+                            <span class="templates__title--text-green">OTHER TEMPLATES</span>
+                        </h2>
+                        <p class="templates__description">
+                            You are confronted with a site with many templates on a page and you can
+                            choose any one you want to see the potential of our team in web design!
+                        </p>
+                    </div>
+                    <div class="templates__slider swiper">
                         <div class="swiper-wrapper">
-                            <div class="whoarewe__slider-sliding swiper-slide">
-                                <div class="whoarewe__slider-content">
-                                    <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
-                                    <p class="whoarewe__slider-description">
-                                        I’m Ui (user interface) and Ux (user experience) designer of this site who actually
-                                        designs the graphic of the website and how the user interacts with the site.
-                                    </p>
-                                    <div class="whoarewe__slider-person">
-                                        <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
-                                        <p class="whoarewe__slider-person-text">
-                                            Seyed Ehsan Mostafavi Nezhad
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="templates__slider-sliding swiper-slide">
+                                <a href="#" class="templates__slider-text">Template 1</a>
                             </div>
-                            <div class="whoarewe__slider-sliding swiper-slide">
-                                <div class="whoarewe__slider-content">
-                                    <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
-                                    <p class="whoarewe__slider-description">
-                                        I’m Ui (user interface) and Ux (user experience) designer of this site who actually
-                                        designs the graphic of the website and how the user interacts with the site.
-                                    </p>
-                                    <div class="whoarewe__slider-person">
-                                        <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
-                                        <p class="whoarewe__slider-person-text">
-                                            Seyed Ehsan Mostafavi Nezhad
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="templates__slider-sliding swiper-slide">
+                                <a href="#" class="templates__slider-text">Template 2</a>
                             </div>
-                            <div class="whoarewe__slider-sliding swiper-slide">
-                                <div class="whoarewe__slider-content">
-                                    <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
-                                    <p class="whoarewe__slider-description">
-                                        I’m Ui (user interface) and Ux (user experience) designer of this site who actually
-                                        designs the graphic of the website and how the user interacts with the site.
-                                    </p>
-                                    <div class="whoarewe__slider-person">
-                                        <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
-                                        <p class="whoarewe__slider-person-text">
-                                            Seyed Ehsan Mostafavi Nezhad
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="templates__slider-sliding swiper-slide">
+                                <a href="#" class="templates__slider-text">Template 3</a>
                             </div>
                         </div>               
                         <img src="{%static '/images/genreal/prev-btn.png' %}" class="slider-btn swiper-button-prev" alt="prev button">
                         <img src="{%static '/images/genreal/next-btn.png' %}" class="slider-btn swiper-button-next" alt="next button">
-                        <div class="whoarewe__slider-scrollbar swiper-scrollbar"></div>
+                        <div class="slider-scrollbar swiper-scrollbar"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="whoarewe__images">
-            <img src="{%static '/images/genreal/Cloud-2.png' %}" class="whoarewe__cloud2-image" alt="cloud 2">
-            <img src="{%static '/images/genreal/Cloud-3.png' %}" class="whoarewe__cloud3-image" alt="cloud 3">
-            <div class="whoarewe__bottom-images">
-                <div class="whoarewe__bottom-left-images">
-                    <img src="{%static '/images/genreal/grasses-2.png' %}" class="whoarewe__grasses2-image" alt="grasses">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                </div>
-                <div class="whoarewe__bottom-right-images">
-                    <img src="{%static '/images/genreal/grass-hill-2.png'%}" class="whoarewe__grass-hill2-image" alt="grasses">
-                    <img src="{%static '/images/genreal/chimney.png'%} " class="whoarewe__chimney-image" alt="grasses">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="order" id="order">
-        <div class="order__content">
-            <div class="container">
-                <div class="order__container">
-                    <h2 class="order__section__title section__title">
-                        type
-                        <span class="order__title-green">site specifications</span>
-                    </h2>
-                    <form class="order__texts" id="formOrder" action="" method="post">
-                        {% csrf_token %}
-                        <div class="order__texts-left">
-                            <div class="order__texts-left-specifictions1">
-                                <div class="order__texts-left-name">
-                                    <p class="order__texts-left-name-title">business name:</p>
-                                    <input class="order__texts-left-name-input" id="nameInput" type="text" name="site-name" placeholder="the name of the site">
-                                </div>
-                                <div class="order__texts-left-file">
-                                    <div>
-                                        <p class="order__texts-left-file-title">attach a file</p>
-                                        <p class="order__texts-left-file-subtitle" id="fileName"></p>
-                                    </div>
-                                    <label for="fileInput">
-                                        <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-left-file-input-label" alt="pin image">
-                                    </label>
-                                    <input type="file" id="fileInput" class="order__texts-left-file-input" accept="image/png, image/jpeg" name="site-file"> 
-                                </div>
-                            </div>
-                            <div class="order__texts-left-specifictions2">
-                                <div class="order__texts-left-subjects">
-                                    <label for="site-subject" class="order__texts-subject-lable">
-                                        what is your site about?
-                                    </label>
-                                    <input type="text" name="site-subject" class="order__texts-subject-input" id="subjectInput" placeholder="example: shopping">
-                                </div>
-                                <div class="order__texts-left-subjects">
-                                    <label for="site-subject" class="order__texts-subject-lable">
-                                        your email to communicate with you
-                                    </label>
-                                    <input type="text" name="customer-email" class="order__texts-subject-input" id="emailInput" placeholder="example@gmail.com">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="order__texts-right">
-                            <div class="order__texts-right-input">
-                                <p class="order__texts-right-title">brief:</p>
-                                <textarea class="order__texts-right-input-textarea" id="briefInput" name="site-brief" cols="30" rows="6" placeholder="about your business"></textarea>
-                            </div>
-                            <button type="submit" class="order__texts-right-btn">Confrim</button>
-                        </div>
-                    </form>
+            <div class="templates__images">
+                <img src="{%static '/images/genreal/Cloud-1.png' %}" class="templates__cloud1-image" alt="cloud 1">
+                <div class="templates__bottom-images">
+                    <div class="templates__bottom-left-images">
+                        <img src="{%static '/images/genreal/grasses-2.png'%}" class="templates__grasses2-image" alt="grasses">
+                        <img src="{%static '/images/genreal/chimney.png'%}" class="templates__chimney-image" alt="grasses">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    </div>
+                    <div class="templates__bottom-right-images">
+                        <img src="{%static '/images/genreal/grass-hill-2.png' %}" class="templates__grass-hill2-image" alt="grasses">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="order__images">
-            <img src="{%static '/images/genreal/Cloud-1.png' %}" class="order__cloud1-image" alt="cloud 1">
-            <div class="order__bottom-images">
-                <img src="{%static '/images/genreal/grasses-1.png' %}" class="order__grasses1-image" alt="grasses">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
-                <img src="{%static '/images/genreal/flag.png' %}" class="order__flag-image" alt="flag">
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__content">
-                <div class="footer__social-media">         
-                    <a href="#" class="footer__social-media-link">
-                        <img src="{%static '/images/genreal/telegram-icon.png' %}" alt="telegram png">
-                    </a>
-                    <a href="mailto:decode.callinfo@gmail.com" class="footer__social-media-link">
-                        <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
-                    </a>
-                    <a href="https://www.instagram.com/decode.callinfo/" class="footer__social-media-link">
-                        <img src="{%static '/images/genreal/instagram-icon.png' %}" alt="instagram png">
-                    </a>
-                    <a href="https://www.linkedin.com/in/decodecallinfo" class="footer__social-media-link">
-                        <img src="{%static '/images/genreal/linkedin-icon.png' %}" alt="linkedin png">
-                    </a>
-                </div>
-                <p class="footer__text">&copy; All rights reserved for DeCode</p>
-            </div>
-            <div class="footer__images">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-                <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
-            </div>
-            <div class="footer__black-overlay"></div>
-        </div>
-    </footer>
-
-    <div class="order__uncomplete-modal">
-        <p>Fill all the fields correctly !!</p>
-    </div>
-    <div class="order__sending-modal">
-        <p>Sending...</p>
-    </div>
-    <div class="order__servermessage-modal">
-        <p></p>
-    </div>
+        </section>
     
-    <div class="black-overlay"></div>
+        <section class="whoarewe" id="whoarewe">
+            <div class="whoarewe__content">
+                <div class="container">
+                    <div class="whoarewe__texts">
+                        <h2 class="section__title">
+                            who are we?
+                        </h2>
+                        <div class="whoarewe__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="whoarewe__slider-sliding swiper-slide">
+                                    <div class="whoarewe__slider-content">
+                                        <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
+                                        <p class="whoarewe__slider-description">
+                                            I’m Ui (user interface) and Ux (user experience) designer of this site who actually
+                                            designs the graphic of the website and how the user interacts with the site.
+                                        </p>
+                                        <div class="whoarewe__slider-person">
+                                            <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
+                                            <p class="whoarewe__slider-person-text">
+                                                Seyed Ehsan Mostafavi Nezhad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whoarewe__slider-sliding swiper-slide">
+                                    <div class="whoarewe__slider-content">
+                                        <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
+                                        <p class="whoarewe__slider-description">
+                                            I’m Ui (user interface) and Ux (user experience) designer of this site who actually
+                                            designs the graphic of the website and how the user interacts with the site.
+                                        </p>
+                                        <div class="whoarewe__slider-person">
+                                            <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
+                                            <p class="whoarewe__slider-person-text">
+                                                Seyed Ehsan Mostafavi Nezhad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whoarewe__slider-sliding swiper-slide">
+                                    <div class="whoarewe__slider-content">
+                                        <h3 class="whoarewe__slider-title">Ui/Ux designer</h3>
+                                        <p class="whoarewe__slider-description">
+                                            I’m Ui (user interface) and Ux (user experience) designer of this site who actually
+                                            designs the graphic of the website and how the user interacts with the site.
+                                        </p>
+                                        <div class="whoarewe__slider-person">
+                                            <img src="{%static '/images/genreal/person.png' %}" class="whoarewe__slider-person-image" alt="person image">
+                                            <p class="whoarewe__slider-person-text">
+                                                Seyed Ehsan Mostafavi Nezhad
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>               
+                            <img src="{%static '/images/genreal/prev-btn.png' %}" class="slider-btn swiper-button-prev" alt="prev button">
+                            <img src="{%static '/images/genreal/next-btn.png' %}" class="slider-btn swiper-button-next" alt="next button">
+                            <div class="whoarewe__slider-scrollbar swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="whoarewe__images">
+                <img src="{%static '/images/genreal/Cloud-2.png' %}" class="whoarewe__cloud2-image" alt="cloud 2">
+                <img src="{%static '/images/genreal/Cloud-3.png' %}" class="whoarewe__cloud3-image" alt="cloud 3">
+                <div class="whoarewe__bottom-images">
+                    <div class="whoarewe__bottom-left-images">
+                        <img src="{%static '/images/genreal/grasses-2.png' %}" class="whoarewe__grasses2-image" alt="grasses">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    </div>
+                    <div class="whoarewe__bottom-right-images">
+                        <img src="{%static '/images/genreal/grass-hill-2.png'%}" class="whoarewe__grass-hill2-image" alt="grasses">
+                        <img src="{%static '/images/genreal/chimney.png'%} " class="whoarewe__chimney-image" alt="grasses">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                        <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="order" id="order">
+            <div class="order__content">
+                <div class="container">
+                    <div class="order__container">
+                        <h2 class="order__section__title section__title">
+                            type
+                            <span class="order__title-green">site specifications</span>
+                        </h2>
+                        <form class="order__texts" id="formOrder" action="" method="post">
+                            {% csrf_token %}
+                            <div class="order__texts-left">
+                                <div class="order__texts-left-specifictions1">
+                                    <div class="order__texts-left-name">
+                                        <p class="order__texts-left-name-title">business name:</p>
+                                        <input class="order__texts-left-name-input" id="nameInput" type="text" name="site-name" placeholder="the name of the site">
+                                    </div>
+                                    <div class="order__texts-left-file">
+                                        <div>
+                                            <p class="order__texts-left-file-title">attach a file</p>
+                                            <p class="order__texts-left-file-subtitle" id="fileName"></p>
+                                        </div>
+                                        <label for="fileInput">
+                                            <img src="{%static '/images/genreal/pin.png' %}" class="order__texts-left-file-input-label" alt="pin image">
+                                        </label>
+                                        <input type="file" id="fileInput" class="order__texts-left-file-input" accept="image/png, image/jpeg" name="site-file"> 
+                                    </div>
+                                </div>
+                                <div class="order__texts-left-specifictions2">
+                                    <div class="order__texts-left-subjects">
+                                        <label for="site-subject" class="order__texts-subject-lable">
+                                            what is your site about?
+                                        </label>
+                                        <input type="text" name="site-subject" class="order__texts-subject-input" id="subjectInput" placeholder="example: shopping">
+                                    </div>
+                                    <div class="order__texts-left-subjects">
+                                        <label for="site-subject" class="order__texts-subject-lable">
+                                            your email to communicate with you
+                                        </label>
+                                        <input type="text" name="customer-email" class="order__texts-subject-input" id="emailInput" placeholder="example@gmail.com">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__texts-right">
+                                <div class="order__texts-right-input">
+                                    <p class="order__texts-right-title">brief:</p>
+                                    <textarea class="order__texts-right-input-textarea" id="briefInput" name="site-brief" cols="30" rows="6" placeholder="about your business"></textarea>
+                                </div>
+                                <button type="submit" class="order__texts-right-btn">Confrim</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="order__images">
+                <img src="{%static '/images/genreal/Cloud-1.png' %}" class="order__cloud1-image" alt="cloud 1">
+                <div class="order__bottom-images">
+                    <img src="{%static '/images/genreal/grasses-1.png' %}" class="order__grasses1-image" alt="grasses">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/blocks.png' %}" class="blocks-image" alt="blocks">
+                    <img src="{%static '/images/genreal/flag.png' %}" class="order__flag-image" alt="flag">
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__social-media">         
+                        <a href="#" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/telegram-icon.png' %}" alt="telegram png">
+                        </a>
+                        <a href="mailto:decode.callinfo@gmail.com" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
+                        </a>
+                        <a href="https://www.instagram.com/decode.callinfo/" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/instagram-icon.png' %}" alt="instagram png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/decodecallinfo" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/linkedin-icon.png' %}" alt="linkedin png">
+                        </a>
+                    </div>
+                    <p class="footer__text">&copy; All rights reserved for DeCode</p>
+                </div>
+                <div class="footer__images">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                    <img src="{%static '/images/genreal/footer-block-images.png' %}" class="footer__block-images" alt="block-image">
+                </div>
+                <div class="footer__black-overlay"></div>
+            </div>
+        </footer>
+    
+        <div class="order__uncomplete-modal">
+            <p>Fill all the fields correctly !!</p>
+        </div>
+        <div class="order__sending-modal">
+            <p>Sending...</p>
+        </div>
+        <div class="order__servermessage-modal">
+            <p></p>
+        </div>
+        
+        <div class="black-overlay"></div>
+    </div>
+
+    <script>
+        // Loader
+        const mainElem = document.querySelector('.main')
+        const preloaderElem = document.querySelector('.preloader')
+
+        window.addEventListener('load' , () => {
+            // new Promise(resolve => {
+            //     setTimeout(() => {
+            //         preloaderElem.classList.remove('preloader--animation')
+            //         resolve()
+            //     }, 2100);
+            // })
+            // .then(() => {
+            //     setTimeout(() => {
+            //         preloaderElem.classList.add('preloader--animation')
+            //     }, 300);
+            // })
+            preloaderElem.style.display = 'none'
+            mainElem.style.display = 'block'
+        })
+    </script>
 
     <script src="{%static '/vendor/swiper.js' %}"></script>
     <script src="{%static '/js/script.js' %}"></script>

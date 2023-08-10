@@ -1,5 +1,6 @@
 @import "variables.css";
 
+/* Super Mario Animation Keyframes */
 @keyframes walking {
     from {left: 0;}
     to {left: 100%}
