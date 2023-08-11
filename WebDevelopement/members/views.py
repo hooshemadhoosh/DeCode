@@ -25,19 +25,20 @@ def Home(request):
         msg = EmailMultiAlternatives(subject, body,  settings.EMAIL_HOST_USER, recipients,)
         msg.mixed_subtype = 'related'
         msg.content_subtype = 'html'
-        file_dir = "uploads\\" + file.name
-        with open(file_dir,'ab') as f:
-            for i in file.chunks():
-                f.write(i)
-        msg.attach_file(file_dir)
-        if os.path.exists(file_dir):
-            os.remove(file_dir)
-        file_path = "members\static\images\logo\decode logo.png"
-        with open(file_path, 'rb') as f:
-            img = MIMEImage(f.read())
-            img.add_header('Content-ID', '<{name}>'.format(name="logo"))
-            img.add_header('Content-Disposition', 'inline', filename="logo")
-        msg.attach(img)        
+        if file!=None:
+            file_dir = "uploads\\" + file.name
+            with open(file_dir,'ab') as f:
+                for i in file.chunks():
+                    f.write(i)
+            msg.attach_file(file_dir)
+            if os.path.exists(file_dir):
+                os.remove(file_dir)
+        # file_path = "members\static\images\logo\decode logo.png"
+        # with open(file_path, 'rb') as f:
+        #     img = MIMEImage(f.read())
+        #     img.add_header('Content-ID', '<{name}>'.format(name="logo"))
+        #     img.add_header('Content-Disposition', 'inline', filename="logo")
+        # msg.attach(img)        
         msg.send()
         return HttpResponse('1')
         #send_mail(subject,"this is a test",settings.EMAIL_HOST_USER,["decodenotifier@gmail.com","Dahaghaynhmh@gmail.com","Esmailiyan.mahdi@gmail.com"],fail_silently=False,html_message=body)
