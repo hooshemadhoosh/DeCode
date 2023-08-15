@@ -2,6 +2,7 @@
 const showMenuBtn = document.querySelector('.menu-mobile__btn--show')
 const closeMenuBtn = document.querySelector('.menu-mobile__btn--close')
 const menuMobileElem = document.querySelector('.menu-mobile__side')
+const menuMobileLinks = document.querySelectorAll('.menu-mobile__link')
 const blackOverlay = document.querySelector('.black-overlay')
 
 showMenuBtn.addEventListener('click' , () => {
@@ -21,6 +22,13 @@ closeMenuBtn.addEventListener('click' , () => {
 blackOverlay.addEventListener('click' , () => {
     closeMenu()
 })
+
+menuMobileLinks.forEach(menuMobileLink => {
+    menuMobileLink.addEventListener('click' , () => {
+        closeMenu()
+    })
+})
+
 
 // ----------> Email Validation
 const formElem = document.getElementById('formOrder')

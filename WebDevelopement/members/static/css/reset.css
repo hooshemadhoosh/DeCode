@@ -52,6 +52,7 @@ html {
 *::before {
     outline: none;
     box-sizing: inherit;
+	scroll-behavior: smooth;
 }
 
 a {

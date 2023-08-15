@@ -474,11 +474,16 @@
     .footer__social-media-link {
         width: 40px;
         height: 40px;
-        margin-right: 1rem;
     }
     
     .footer__text {
         font-size: 1.4rem;
+    }
+
+        
+    .footer__social-media-link:hover {
+        margin-bottom: 1rem;
+        transform: rotate(360deg);
     }
 }
 
@@ -718,12 +723,7 @@
 
     /* Footer */
     .footer__social-media {
-        margin-bottom: 4rem;
-    }
-    
-    .footer__social-media-link:hover {
-        margin-bottom: 1rem;
-        transform: rotate(360deg);
+        margin-bottom: 2rem;
     }
 }
 

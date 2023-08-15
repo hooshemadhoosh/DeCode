@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeCode | Template 1</title>
+    <title>DeCode | Super Mario</title>
     <link rel="stylesheet" href="{%static '/css/reset.css' %}">
     <link rel="stylesheet" href="{%static '/vendor/swiper.css' %}">
     <link rel="stylesheet" href="{%static  '/css/style.css' %}">
     <link rel="stylesheet" href="{%static '/css/responsive.css' %}">
+    <link rel="shortcut icon" href="{%static '/images/logo/key.png' %}">
 </head>
 <body>
 
@@ -23,9 +24,9 @@
                     <img src="{%static '/images/logo/decode logo.png' %}" class="menu__logo-desktop" alt="Logo">
                 </div>
                 <div class="menu__right">
-                    <a href="#whoarewe" class="menu-link--hover">who are we?</a>
-                    <a href="#order" class="menu-link--hover">order!</a>
-                    <a href="#templates" class="menu-link--hover">other templates</a>
+                    <a href="#templates" class="menu-link--hover">Polymorphic</a>
+                    <a href="#aboutus" class="menu-link--hover">About us</a>
+                    <a href="#order" class="menu-link--hover">Order!</a>
                 </div>
             </div>
             <div class="menu-mobile">
@@ -39,9 +40,9 @@
                     <img src="{%static '/images/header & menu/close-icon.png' %}" class="menu-mobile__btn-image--close" alt="menu icon">
                 </button> 
                 <div class="menu-mobile__list"> 
-                    <a href="#whoarewe" class="menu-mobile__list-item menu-link--hover">who are we?</a>
-                    <a href="#order" class="menu-mobile__list-item menu-link--hover">order!</a>
-                    <a href="#templates" class="menu-mobile__link menu-link--hover">other templates</a>
+                    <a href="#templates" class="menu-mobile__link menu-link--hover">Polymorphic</a>
+                    <a href="#aboutus" class="menu-mobile__link menu-link--hover">About us</a>
+                    <a href="#order" class="menu-mobile__link menu-link--hover">Order!</a>
                 </div>              
             </div>
         </menu>
@@ -98,7 +99,7 @@
                     <div class="templates__texts">
                         <h2 class="section__title templates__title">
                             what do we mean by
-                            <span class="templates__title--text-green">OTHER TEMPLATES</span>
+                            <span class="templates__title--text-green">Polymorphic website?</span>
                         </h2>
                         <p class="templates__description">
                             You are confronted with a site with many templates on a page and you can
@@ -158,12 +159,12 @@
             </div>
         </section>
     
-        <section class="whoarewe" id="whoarewe">
+        <section class="whoarewe" id="aboutus">
             <div class="whoarewe__content">
                 <div class="container">
                     <div class="whoarewe__texts">
                         <h2 class="section__title">
-                            who are we?
+                            about us
                         </h2>
                         <div class="whoarewe__slider swiper">
                             <div class="swiper-wrapper">
@@ -347,17 +348,20 @@
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__content">
-                    <div class="footer__social-media">         
-                        <a href="#" class="footer__social-media-link">
+                    <div class="footer__social-media">
+                        <a href="https://github.com/DeC01de/DeCode" target="_blank" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/github-icon.png' %}" alt="telegram png">
+                        </a>
+                        <a href="mailto:decode.callinfo@gmail.com" target="_blank" class="footer__social-media-link">
+                            <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
+                        </a>   
+                        <a href="https://t.me/https://t.me/Decodecallinfo/" target="_blank" class="footer__social-media-link">
                             <img src="{%static '/images/genreal/telegram-icon.png' %}" alt="telegram png">
                         </a>
-                        <a href="mailto:decode.callinfo@gmail.com" class="footer__social-media-link">
-                            <img src="{%static '/images/genreal/email-icon.png' %}" alt="email png">
-                        </a>
-                        <a href="https://www.instagram.com/decode.callinfo/" class="footer__social-media-link">
+                        <a href="https://www.instagram.com/decode.callinfo/" target="_blank" class="footer__social-media-link">
                             <img src="{%static '/images/genreal/instagram-icon.png' %}" alt="instagram png">
                         </a>
-                        <a href="https://www.linkedin.com/in/decodecallinfo" class="footer__social-media-link">
+                        <a href="https://www.linkedin.com/in/decodecallinfo" target="_blank" class="footer__social-media-link">
                             <img src="{%static '/images/genreal/linkedin-icon.png' %}" alt="linkedin png">
                         </a>
                     </div>
